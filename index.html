@@ -301,8 +301,8 @@
     </div>
 
     <!-- Review List -->
-    <div class="review-area">
-        <div class="review-wrap">
+    <div class="main-review-area">
+        <div class="main-review-wrap">
             <div class="review-left">
                 <h2>
                     <strong>글씨체</strong>는 다르지만<br>
@@ -391,6 +391,24 @@
                     </div>
                     <a href="javascript:void(0);" class="btn-more">자세히 보기</a>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  -->
+    <div class="main-partners">
+        <div class="partners-wrap">
+            <h2>제휴 파트너사</h2>
+            <p>오토다이렉트카와 제휴를 맺은 22개 렌터카 브랜드에서 가격비교를 진행해 고객님이 원하는 차량을 가장 저렴하고 합리적인 가격으로 알아볼 수 있습니다</p>
+            <div class="partner-list owl-carousel">
+                <div><img src="resources/img/partners/partner_1.png"></div>
+                <div><img src="resources/img/partners/partner_2.png"></div>
+                <div><img src="resources/img/partners/partner_3.png"></div>
+                <div><img src="resources/img/partners/partner_4.png"></div>
+                <div><img src="resources/img/partners/partner_1.png"></div>
+                <div><img src="resources/img/partners/partner_2.png"></div>
+                <div><img src="resources/img/partners/partner_3.png"></div>
+                <div><img src="resources/img/partners/partner_4.png"></div>
             </div>
         </div>
     </div>
@@ -738,6 +756,22 @@ $(document).ready(function(){
         responsive:{
             1260:{
                 items:5
+            }
+        }
+    });
+
+    var owl = $('.owl-carousel.partner-list');
+        owl.owlCarousel({
+        margin: 20,
+        loop: true,
+        nav: true,
+        dots:false,
+        autoplay:true,
+        autoplayTimeout:3000,
+        autoplayHoverPause:true,
+        responsive:{
+            1260:{
+                items:6
             }
         }
     });
