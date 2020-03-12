@@ -92,7 +92,7 @@ button:focus{outline:none;}
 input,button,select,textarea {outline:none;font-family:'Noto Sans KR', sans-serif;font-weight:400;}
 
 /* Header Area */
-.header {position:fixed;top:0;left:0;right:0;bottom:0;height:132px;background-color:#FFF;z-index:10;min-width:1260px;overflow:auto;box-shadow:inset 0 -1px 0 0 #e6e6e6;}
+.header {position:fixed;top:0;left:0;right:0;bottom:0;height:132px;background-color:#FFF;z-index:15;min-width:1260px;overflow:auto;box-shadow:inset 0 -1px 0 0 #e6e6e6;}
 .header-wrap {position:relative;width:1260px;margin:0 auto;}
 
 .header-top {height:41px;border-bottom:1px solid #e6e6e6;box-sizing:border-box;}
@@ -183,39 +183,64 @@ input,button,select,textarea {outline:none;font-family:'Noto Sans KR', sans-seri
 
 /* Time Attack */
 .main-timeattack {width:100%;background-color:#f2f2f2;}
-.main-timeattack .timeattack-wrap {position:relative;width:1260px;margin:0 auto;padding:65px 0 70px 0;}
 .main-timeattack h2 {text-align:center;padding-bottom:40px;}
 .main-timeattack h2 small {font-size:18px;font-weight:500;color:#666;display:block;padding-bottom:10px;}
 .main-timeattack h2 span {display:inline-block;position:relative;font-weight:600;color:#ff008a;}
 .main-timeattack h2 span:after {content:"";position:absolute;bottom:5px;left:-10px;right:-10px;height:20px;background-color:rgba(255, 0, 138, 0.2);display:block;}
-.main-timeattack .timeattack-list {display:flex;}
-.main-timeattack .timeattack-item {flex:1;background-color:#fff;margin-left:40px;width:285px;}
-.main-timeattack .timeattack-item:first-child {margin-left:0;}
-.main-timeattack .timeattack-item .car-info {padding:0 0 15px 0;}
-.main-timeattack .timeattack-item .car-info .car-image {text-align:center;height:170px;line-height:170px;}
-.main-timeattack .timeattack-item .car-info .car-image img {max-width:200px;max-height:170px;vertical-align:middle;}
-.main-timeattack .timeattack-item .car-info .car-name {text-align:center;font-size:25px;font-weight:600;}
-.main-timeattack .timeattack-item .car-info .car-price {text-align:center;font-size:18px;font-weight:400;letter-spacing:0;}
-.main-timeattack .timeattack-item .car-info .car-price:after {content:"원";}
-.main-timeattack .timeattack-item .car-info .car-desc {text-align:center;padding:10px 0;font-weight:300;}
-.main-timeattack .timeattack-item .conditions-info {text-align:center;width:240px;margin:0 auto;border-top:1px solid #bcbcbc;padding:10px 0;}
-.main-timeattack .timeattack-item .conditions-info > div:after {content:"";display:block;clear:both;}
-.main-timeattack .timeattack-item .conditions-info > div {padding:5px 10px;}
-.main-timeattack .timeattack-item .conditions-info > div > span {float:left;display:block;font-size:14px;color:#333;line-height:25px;font-weight:400;}
-.main-timeattack .timeattack-item .conditions-info > div > strong {float:right;display:block;font-size:20px;color:#d70000;line-height:25px;font-weight:500;}
-.main-timeattack .timeattack-item .price-info {padding-top:15px;text-align:center;width:240px;margin:0 auto;border-top:1px dashed #222;}
-.main-timeattack .timeattack-item .price-info .real-price {text-align:right;padding:5px 10px;font-size:18px;text-decoration:line-through;color:#666;letter-spacing:0;font-weight:300;}
-.main-timeattack .timeattack-item .price-info .real-price:after {content:"원";}
-.main-timeattack .timeattack-item .price-info .discount-price {padding:5px 10px;}
-.main-timeattack .timeattack-item .price-info .discount-price:after {content:"";display:block;clear:both;}
-.main-timeattack .timeattack-item .price-info .discount-price > span {float:left;display:block;font-size:14px;color:#333;line-height:25px;font-weight:400;}
-.main-timeattack .timeattack-item .price-info .discount-price > strong {float:right;display:block;font-size:22px;color:#d70000;line-height:25px;font-weight:600;letter-spacing:0;}
-.main-timeattack .timeattack-item .price-info .discount-price > strong:after {content:"원";font-size:18px;font-weight:500;}
+.timeattack-header {width:100%;}
+.timeattack-wrap {position:relative;width:1260px;margin:0 auto;padding:65px 0 70px 0;}
+.timeattack-list {display:flex;}
+.timeattack-item {flex:1;background-color:#fff;margin-left:20px;width:285px;box-sizing:border-box;}
+.timeattack-item:first-child {margin-left:0;}
+.timeattack-item .car-info {padding:0 0 15px 0;}
+.timeattack-item .car-info .car-image {text-align:center;height:170px;line-height:170px;}
+.timeattack-item .car-info .car-image img {max-width:200px;max-height:170px;vertical-align:middle;}
+.timeattack-item .car-info .car-name {text-align:center;font-size:25px;font-weight:600;}
+.timeattack-item .car-info .car-price {text-align:center;font-size:18px;font-weight:400;letter-spacing:0;}
+.timeattack-item .car-info .car-price:after {content:"원";}
+.timeattack-item .car-info .car-desc {text-align:center;padding:10px 0;font-weight:300;}
+.timeattack-item .conditions-info {text-align:center;width:240px;margin:0 auto;border-top:1px solid #bcbcbc;padding:10px 0;box-sizing:border-box;}
+.timeattack-item .conditions-info > div:after {content:"";display:block;clear:both;}
+.timeattack-item .conditions-info > div {padding:5px 0;}
+.timeattack-item .conditions-info > div > span {float:left;display:block;font-size:14px;color:#333;line-height:25px;font-weight:400;}
+.timeattack-item .conditions-info > div > strong {float:right;display:block;font-size:20px;color:#d70000;line-height:25px;font-weight:500;}
+.timeattack-item .price-info {padding-top:15px;text-align:center;width:240px;margin:0 auto;border-top:1px dashed #222;padding:0;box-sizing:border-box;}
+.timeattack-item .price-info .real-price {text-align:right;padding:10px 0 0 0;font-size:18px;text-decoration:line-through;color:#666;letter-spacing:0;font-weight:300;}
+.timeattack-item .price-info .real-price:after {content:"원";}
+.timeattack-item .price-info .discount-price {padding:5px 0;}
+.timeattack-item .price-info .discount-price:after {content:"";display:block;clear:both;}
+.timeattack-item .price-info .discount-price > span {float:left;display:block;font-size:14px;color:#333;line-height:25px;font-weight:400;}
+.timeattack-item .price-info .discount-price > strong {float:right;display:block;font-size:22px;color:#d70000;line-height:25px;font-weight:600;letter-spacing:0;}
+.timeattack-item .price-info .discount-price > strong:after {content:"원";font-size:18px;font-weight:500;}
+.timeattack-item .btn-area {padding:20px 0 40px 0;text-align:center;}
+.timeattack-item .btn-area button {padding:7px 0;width:240px;font-size:20px;font-weight:600;color:#d70000;border:1px solid #d70000;background-color:transparent;cursor:pointer;}
+.timeattack-item .btn-area button span {display:inline-block;}
+.timeattack-item .btn-area button:hover {background-color:#d70000;color:#fff;}
 
-.main-timeattack .timeattack-item .btn-area {padding:20px 0 40px 0;text-align:center;}
-.main-timeattack .timeattack-item .btn-area button {padding:7px 0;width:240px;font-size:20px;font-weight:600;color:#d70000;border:1px solid #d70000;background-color:transparent;cursor:pointer;}
-.main-timeattack .timeattack-item .btn-area button span {display:inline-block;}
-.main-timeattack .timeattack-item .btn-area button:hover {background-color:#d70000;color:#fff;}
+/* Time Attack Header */
+.timeattack-header {position:relative;height:725px;}
+.timeattack-header .timeattack-img {position:absolute;top:0;left:50%;margin-left:-630px;width:1260px;height:725px;background:url(../img/bg_time_attack.png) 0 0 no-repeat;z-index:2;}
+.timeattack-header:before {content:"";position:absolute;top:0;left:0;width:50%;height:725px;background:url(../img/bg_time_attack_left.png) 0 0 repeat-x;z-index:1;}
+.timeattack-header:after {content:"";position:absolute;top:0;right:0;width:50%;height:725px;background:url(../img/bg_time_attack_right.png) 0 0 repeat-x;z-index:1;}
+.timeattack-header .timeattack-counter {position:absolute;top:200px;width:100%;left:0;right:0;text-align:center;height:110px;line-height:110px;font-size:80px;letter-spacing:40px;font-weight:600;color:#121212;z-index:3;background:url(../img/bg_time.png) 50% 50% no-repeat;}
+
+/* Time Attack Detail */
+.timeattack-list.detail {display:block;}
+.timeattack-list.detail:after {content:"";display:block;clear:both;}
+.timeattack-list.detail .timeattack-item {float:left;width:300px;border:1px solid #ccc;margin-top:30px;}
+.timeattack-list.detail .timeattack-item:nth-child(4n+1) {margin-left:0;}
+.timeattack-list.detail .timeattack-item .btn-area {padding-bottom:30px;}
+.timeattack-list.detail .timeattack-item .conditions-info,
+.timeattack-list.detail .timeattack-item .price-info,
+.timeattack-list.detail .timeattack-item .btn-area button {width:260px;}
+
+/* Time Attack Footer */
+.timeattack-footer {width:1260px;margin:0 auto;padding-bottom:80px;}
+.timeattack-footer h3 {font-size:30px;color:#222;font-weight:300;text-align:center;}
+.timeattack-footer h3 strong {font-weight:500;}
+.timeattack-footer p {font-size:18px;color:#222;text-align:center;line-height:22px;padding:10px 0 25px 0;}
+.timeattack-banner {font-size:0;}
+
 
 /* Youtube */
 .youtube-area {padding:70px 0;}
@@ -253,25 +278,25 @@ input,button,select,textarea {outline:none;font-family:'Noto Sans KR', sans-seri
 .count-area li em {display:block;font-size:18px;font-weight:300;line-height:26px;color:#333;font-style:normal;padding-top:15px;}
 .count-area li strong {display:block;font-size:18px;font-weight:600;line-height:26px;color:#333;}
 
-/* Main - Review */
-.main-review-area {padding:60px 0;}
-.main-review-wrap {position:relative;width:1260px;margin:0 auto;}
-.review-left {position:absolute;top:0;left:0;bottom:0;width:350px;}
-.review-left h2 {font-size:38px;line-height:45px;font-weight:300;color:#333;padding-bottom:10px;}
-.review-left p {font-size:18px;font-weight:400;color:#666;}
-.review-right {padding-left:350px;width:910px;}
-.review-right.owl-carousel {width:910px;}
-.review-item .item-img {font-size:0;width:180px;margin:0 auto;}
-.review-item .item-tt {font-size:16px;color:#333;font-weight:500;padding:10px 0;width:180px;margin:0 auto;line-height:20px;}
-.review-item .item-text {font-size:12px;line-height:15px;max-height:60px;overflow:hidden;white-space:pre-wrap;word-break:break-all;color:#555;width:180px;margin:0 auto;}
-.review-item .item-date {font-size:12px;color:#555;padding:5px 0;width:180px;margin:0 auto;}
-.review-right.owl-carousel .owl-nav {position:absolute;top:290px;left:0;}
-.review-right.owl-carousel .owl-nav button.owl-prev{margin:0;}
-.review-right.owl-carousel .owl-nav button.owl-next,
-.review-right.owl-carousel .owl-nav button.owl-prev {margin:0;transform:none;width:94px;height:30px;background:url(../img/btn_review_nav.png) 0 0 no-repeat;}
-.review-right.owl-carousel .owl-nav button.owl-next span,
-.review-right.owl-carousel .owl-nav button.owl-prev span {display:none;}
-.review-right.owl-carousel .owl-nav button.owl-next {background-position:100% 0;}
+/* Main - Contract */
+.main-contract-area {padding:60px 0;}
+.main-contract-wrap {position:relative;width:1260px;margin:0 auto;}
+.contract-left {position:absolute;top:0;left:0;bottom:0;width:350px;}
+.contract-left h2 {font-size:38px;line-height:45px;font-weight:300;color:#333;padding-bottom:10px;}
+.contract-left p {font-size:18px;font-weight:400;color:#666;}
+.contract-right {padding-left:350px;width:910px;}
+.contract-right.owl-carousel {width:910px;}
+.contract-item .item-img {font-size:0;width:180px;margin:0 auto;}
+.contract-item .item-tt {font-size:16px;color:#333;font-weight:500;padding:10px 0;width:180px;margin:0 auto;line-height:20px;}
+.contract-item .item-text {font-size:12px;line-height:15px;max-height:60px;overflow:hidden;white-space:pre-wrap;word-break:break-all;color:#555;width:180px;margin:0 auto;}
+.contract-item .item-date {font-size:12px;color:#555;padding:5px 0;width:180px;margin:0 auto;}
+.contract-right.owl-carousel .owl-nav {position:absolute;top:290px;left:0;}
+.contract-right.owl-carousel .owl-nav button.owl-prev{margin:0;}
+.contract-right.owl-carousel .owl-nav button.owl-next,
+.contract-right.owl-carousel .owl-nav button.owl-prev {margin:0;transform:none;width:94px;height:30px;background:url(../img/btn_contract_nav.png) 0 0 no-repeat;}
+.contract-right.owl-carousel .owl-nav button.owl-next span,
+.contract-right.owl-carousel .owl-nav button.owl-prev span {display:none;}
+.contract-right.owl-carousel .owl-nav button.owl-next {background-position:100% 0;}
 
 /* Board Area */
 .board-area {padding:60px 0;}
@@ -392,6 +417,46 @@ input,button,select,textarea {outline:none;font-family:'Noto Sans KR', sans-seri
 .hotdeal-detail-bottom {border-top:2px solid #222;padding:20px 0;text-align:right;}
 .hotdeal-detail-bottom a {display:inline-block;width:150px;height:50px;line-height:48px;border:1px solid #ccc;color:#222;font-weight:500;text-align:center;letter-spacing:1px;}
 .hotdeal-detail-bottom a:hover {border-color:#222;}
+
+/* Review */
+.review-wrap {margin:0 auto;padding:60px 0;width:1260px;position:relative;}
+.review-header {padding:30px 90px;background-color:#f4f4f4;}
+.review-header h2 span {display:inline-block;font-size:30px;font-weight:300;color:#d70000;line-height:35px;border-top:2px solid #d70000;letter-spacing:-2px;}
+.review-header h2 span strong {font-weight:500;}
+.review-header-list {padding:20px 0 0 0;}
+.review-item .item-header {position:relative;font-size:0;}
+.review-item .item-header h4 {position:absolute;bottom:0;left:0;right:0;height:75px;background-color:rgba(0,0,0,0.16);box-sizing:border-box;padding-left:15px;padding-top:15px;}
+.review-item .item-header h4 strong {display:block;font-size:18px;color:#fff;font-weight:500;}
+.review-item .item-header h4 span {display:block;font-size:13px;color:#d5d4d4;}
+.review-item .item-header img {width:250px;height:200px;}
+.review-item .item-tt {font-size:18px;color:#333;font-weight:500;padding:10px 20px 5px 20px;background-color:#fff;}
+.review-item .item-text {font-size:13px;line-height:20px;height:80px;padding:0 20px 20px 20px;overflow:hidden;white-space:pre-wrap;word-break:break-all;color:#555;background-color:#fff;letter-spacing:0;}
+.review-header-list.owl-carousel .owl-nav {position:absolute;top:150px;left:-70px;right:-70px;}
+.review-header-list.owl-carousel .owl-nav button.owl-prev{margin:0;}
+.review-header-list.owl-carousel .owl-nav button.owl-next,
+.review-header-list.owl-carousel .owl-nav button.owl-prev {position:absolute;left:0;margin:0;transform:none;width:70px;height:70px;background:url(../img/btn_review_nav.png) 0 0 no-repeat;}
+.review-header-list.owl-carousel .owl-nav button.owl-next span,
+.review-header-list.owl-carousel .owl-nav button.owl-prev span {display:none;}
+.review-header-list.owl-carousel .owl-nav button.owl-next {background-position:100% 0;left:auto;right:0;}
+.review-tt {font-size:22px;font-weight:600;color:#222;padding:40px 0 0 0;line-height:25px;}
+.review-list:after {content:"";display:block;clear:both;}
+.review-list .review-item {float:left;width:300px;margin-top:20px;margin-left:20px;}
+.review-list .review-item:nth-child(4n+1) {margin-left:0;}
+.review-list .review-item .item-header img {width:300px;height:200px;}
+.review-list .review-item .item-tt {border-left:1px solid #ddd;border-right:1px solid #ddd;}
+.review-list .review-item .item-text {border:1px solid #ddd;border-top:0 none;}
+
+.list-paging {text-align:center;padding:20px 0;}
+.list-paging a {display:inline-block;width:30px;height:30px;text-align:center;line-height:30px;color:#666;font-size:13px;margin:0 4px;vertical-align:middle;border-radius:50%;box-sizing:border-box;}
+.list-paging a:hover,
+.list-paging a.active {background-color:#d70000;color:#fff;}
+.list-paging a.btn-paging {width:30px;height:30px;background:url(../img/btn_paging.png) 0 0 no-repeat;border:0 none;}
+.list-paging a.btn-paging:hover {background-image:url(../img/btn_paging_hover.png)}
+.list-paging a.btn-paging.prev {background-position:-30px 0;}
+.list-paging a.btn-paging.next {background-position:-60px 0;}
+.list-paging a.btn-paging.last {background-position:-90px 0;}
+
+
 
 
 .quotation-area {background-color:#eee;padding:60px 0;}

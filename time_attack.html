@@ -15,6 +15,24 @@
 <link rel="stylesheet" type="text/css" href="resources/css/owl.carousel.min.css">
 <link rel="stylesheet" type="text/css" href="resources/css/owl.theme.default.min.css">
 <link rel="stylesheet" type="text/css" href="resources/css/jquery.mCustomScrollbar.css">
+<style type="text/css">
+    br { clear: both; }
+    .cntSeparator {
+      font-size: 54px;
+      margin: 10px 7px;
+      color: #000;
+    }
+    .desc { margin: 7px 3px; }
+    .desc div {
+      float: left;
+      font-family: Arial;
+      width: 70px;
+      margin-right: 65px;
+      font-size: 13px;
+      font-weight: bold;
+      color: #000;
+    }
+  </style>
 </head>
 <body>
 <div class="header">
@@ -40,8 +58,8 @@
         <div class="nav">
             <ul>
                 <li><a href="allcar_quote.html"><span>전차종 간편 견적</span></a></li>
-                <li><a href="time_attack.html"><img src="resources/img/icon_nav_time.png"><span>타임어택 특가</span><em><img src="resources/img/nav_bubble_time.png"></em></a></li>
-                <li class="eco"><a href="ecocar.html" class="active"><span>친환경</span></a></li>
+                <li><a href="time_attack.html" class="active"><img src="resources/img/icon_nav_time.png"><span>타임어택 특가</span><em><img src="resources/img/nav_bubble_time.png"></em></a></li>
+                <li class="eco"><a href="ecocar.html"><span>친환경</span></a></li>
                 <li class="new"><a href="hotdeal.html"><span>온앤온 핫딜</span></a></li>
                 <li><a href="review.html"><span>생생 리얼후기</span></a></li>
             </ul>
@@ -52,127 +70,88 @@
     </div>
 </div>
 <div class="content">
-    <!-- ECO Header Image -->
-    <div class="ecocar-image">
-        <img src="resources/img/img_ecocar.png">
-    </div>
-    <div class="ecocar-list">
-        <ul>
-            <li>
-                <div class="car-box">
-                    <div class="car-img"><img src="resources/img/sample_ecocar.png"></div>
+    <!-- 타임 어택 -->
+        <div class="timeattack-header">
+            <div class="timeattack-img"></div>
+            <div id="counter" class="timeattack-counter"></div>
+        </div>
+        <div class="timeattack-wrap">
+            <div class="timeattack-list detail">
+                <div class="timeattack-item">
                     <div class="car-info">
-                        <div class="icon-ecocar hybrid"></div>
-                        <h2>니로 플러그인 하이브리드</h2>
-                        <div class="car-detail">
-                            <div>연료: 가솔린+전기</div>
-                            <div>연비: 16km/L</div>
-                        </div>
-                        <div class="car-price">
-                            <span>월 납입료</span>
-                            <strong>300,000</strong>
-                            <em>원</em>
-                        </div>
+                        <div class="car-image"><img src="http://autoimg.danawa.com/photo/3563/model_600.png" width="100%"></div>
+                        <div class="car-name">팰리세이드</div>
+                        <div class="car-price">50,000,000</div>
                     </div>
-                    <div class="car-over"><a href="javascript:void(0)">견적문의</a></div>
+                    <div class="conditions-info">
+                        <div class="term"><span>계약기간:</span><strong>48개월</strong></div>
+                        <div class="promotion-price"><span>보증금:</span><strong>30%</strong></div>
+                    </div>
+                    <div class="price-info">
+                        <div class="real-price">550,000</div>
+                        <div class="discount-price"><span>월 납입료</span><strong>300,000</strong></div>
+                    </div>
+                    <div class="btn-area"><button type="button"><span>간편상담신청</span></button></div>
                 </div>
-            </li>
-            <li>
-                <div class="car-box">
-                    <div class="car-img"><img src="resources/img/sample_ecocar.png"></div>
+                <div class="timeattack-item">
                     <div class="car-info">
-                        <div class="icon-ecocar plugin_hybrid"></div>
-                        <h2>니로 플러그인 하이브리드</h2>
-                        <div class="car-detail">
-                            <div>연료: 가솔린+전기</div>
-                            <div>연비: 16km/L</div>
-                        </div>
-                        <div class="car-price">
-                            <span>월 납입료</span>
-                            <strong>300,000</strong>
-                            <em>원</em>
-                        </div>
+                        <div class="car-image"><img src="http://autoimg.danawa.com/photo/3563/model_600.png" width="100%"></div>
+                        <div class="car-name">팰리세이드</div>
+                        <div class="car-price">50,000,000</div>
                     </div>
-                    <div class="car-over"><a href="javascript:void(0)">견적문의</a></div>
+                    <div class="conditions-info">
+                        <div class="term"><span>계약기간:</span><strong>48개월</strong></div>
+                        <div class="promotion-price"><span>보증금:</span><strong>30%</strong></div>
+                    </div>
+                    <div class="price-info">
+                        <div class="real-price">550,000</div>
+                        <div class="discount-price"><span>월 납입료</span><strong>300,000</strong></div>
+                    </div>
+                    <div class="btn-area"><button type="button"><span>간편상담신청</span></button></div>
                 </div>
-            </li>
-            <li>
-                <div class="car-box">
-                    <div class="car-img"><img src="resources/img/sample_ecocar.png"></div>
+                <div class="timeattack-item">
                     <div class="car-info">
-                        <div class="icon-ecocar electric_car"></div>
-                        <h2>니로 플러그인 하이브리드</h2>
-                        <div class="car-detail">
-                            <div>연료: 가솔린+전기</div>
-                            <div>연비: 16km/L</div>
-                        </div>
-                        <div class="car-price">
-                            <span>월 납입료</span>
-                            <strong>300,000</strong>
-                            <em>원</em>
-                        </div>
+                        <div class="car-image"><img src="http://autoimg.danawa.com/photo/3563/model_600.png" width="100%"></div>
+                        <div class="car-name">팰리세이드</div>
+                        <div class="car-price">50,000,000</div>
                     </div>
-                    <div class="car-over"><a href="javascript:void(0)">견적문의</a></div>
+                    <div class="conditions-info">
+                        <div class="term"><span>계약기간:</span><strong>48개월</strong></div>
+                        <div class="promotion-price"><span>보증금:</span><strong>30%</strong></div>
+                    </div>
+                    <div class="price-info">
+                        <div class="real-price">550,000</div>
+                        <div class="discount-price"><span>월 납입료</span><strong>300,000</strong></div>
+                    </div>
+                    <div class="btn-area"><button type="button"><span>간편상담신청</span></button></div>
                 </div>
-            </li>
-            <li>
-                <div class="car-box">
-                    <div class="car-img"><img src="resources/img/sample_ecocar.png"></div>
+                <div class="timeattack-item">
                     <div class="car-info">
-                        <div class="icon-ecocar hybrid"></div>
-                        <h2>니로 플러그인 하이브리드</h2>
-                        <div class="car-detail">
-                            <div>연료: 가솔린+전기</div>
-                            <div>연비: 16km/L</div>
-                        </div>
-                        <div class="car-price">
-                            <span>월 납입료</span>
-                            <strong>300,000</strong>
-                            <em>원</em>
-                        </div>
+                        <div class="car-image"><img src="http://autoimg.danawa.com/photo/3563/model_600.png" width="100%"></div>
+                        <div class="car-name">팰리세이드</div>
+                        <div class="car-price">50,000,000</div>
                     </div>
-                    <div class="car-over"><a href="javascript:void(0)">견적문의</a></div>
-                </div>
-            </li>
-            <li>
-                <div class="car-box">
-                    <div class="car-img"><img src="resources/img/sample_ecocar.png"></div>
-                    <div class="car-info">
-                        <div class="icon-ecocar electric_car"></div>
-                        <h2>니로 플러그인 하이브리드</h2>
-                        <div class="car-detail">
-                            <div>연료: 가솔린+전기</div>
-                            <div>연비: 16km/L</div>
-                        </div>
-                        <div class="car-price">
-                            <span>월 납입료</span>
-                            <strong>300,000</strong>
-                            <em>원</em>
-                        </div>
+                    <div class="conditions-info">
+                        <div class="term"><span>계약기간:</span><strong>48개월</strong></div>
+                        <div class="promotion-price"><span>보증금:</span><strong>30%</strong></div>
                     </div>
-                    <div class="car-over"><a href="javascript:void(0)">견적문의</a></div>
-                </div>
-            </li>
-            <li>
-                <div class="car-box">
-                    <div class="car-img"><img src="resources/img/sample_ecocar.png"></div>
-                    <div class="car-info">
-                        <div class="icon-ecocar plugin_hybrid"></div>
-                        <h2>니로 플러그인 하이브리드</h2>
-                        <div class="car-detail">
-                            <div>연료: 가솔린+전기</div>
-                            <div>연비: 16km/L</div>
-                        </div>
-                        <div class="car-price">
-                            <span>월 납입료</span>
-                            <strong>300,000</strong>
-                            <em>원</em>
-                        </div>
+                    <div class="price-info">
+                        <div class="real-price">550,000</div>
+                        <div class="discount-price"><span>월 납입료</span><strong>300,000</strong></div>
                     </div>
-                    <div class="car-over"><a href="javascript:void(0)">견적문의</a></div>
+                    <div class="btn-area"><button type="button"><span>간편상담신청</span></button></div>
                 </div>
-            </li>
-        </ul>
+            </div>
+        </div>
+        <div class="timeattack-footer">
+            <h3><span>오토다이렉트카가 자랑하는</span> <strong>전용 특가 3종 세트!</strong></h3>
+            <p>공식 APP, 온라인 홈페이지, 모바일 홈페이지 전용 특가 확인 후<br>합리적이고 저렴한 가격으로 장기렌트 이용해보세요!</p>
+            <div class="timeattack-banner">
+                <a href="javascript:void(0);"><img src="resources/img/timeattack_banner_1.png"></a>
+                <a href="javascript:void(0);"><img src="resources/img/timeattack_banner_2.png"></a>
+                <a href="javascript:void(0);"><img src="resources/img/timeattack_banner_3.png"></a>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -194,7 +173,7 @@
                 <a href="hotdeal.html">온앤온핫딜</a>
                 <a href="review.html">생생리얼후기</a>
                 <a href="autodirectcar_app.html">공식앱</a>
-                <a href="allcar_contact.html">견적문의</a>
+                <a href="allcar_contract.html">견적문의</a>
             </div>
             <p>
                 <span>법인상호 : (주)오토다이렉트카</span>
@@ -243,6 +222,7 @@
 <script src="resources/js/jquery.mCustomScrollbar.concat.min.js"></script>
 <script src="resources/js/jquery.pagenav.js"></script>
 <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=83bfuniegk&amp;submodules=panorama,geocoder,drawing,visualization"></script>
+<script src="resources/js/jquery.countdown.js"></script>
 <script>
 $(window).scroll(function(){
       banner = $('.aside-banner'),
@@ -258,6 +238,11 @@ $(window).scroll(function(){
 
 $(document).ready(function(){
 
+    $("#counter").countdown("2020/03/22", function(event) {
+        $(this).text(
+        event.strftime('%D %H  %M  %S')
+    );
+  });
 });
 
 </script>

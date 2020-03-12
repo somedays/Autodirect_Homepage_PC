@@ -301,9 +301,9 @@
     </div>
 
     <!-- Review List -->
-    <div class="main-review-area">
-        <div class="main-review-wrap">
-            <div class="review-left">
+    <div class="main-contract-area">
+        <div class="main-contract-wrap">
+            <div class="contract-left">
                 <h2>
                     <strong>글씨체</strong>는 다르지만<br>
                     <strong>고객만족도</strong>는<br>
@@ -311,32 +311,32 @@
                 </h2>
                 <p>계약한 차량, 고객의 유형은 다르지만 고객이<br>입을 모아 이야기하는 고객만족도!<br>자필로 작성한 계약후기를 통해 알아보세요</p>
             </div>
-            <div class="review-right owl-carousel">
-                <div class="review-item">
+            <div class="contract-right owl-carousel">
+                <div class="contract-item">
                     <div class="contract-img"><img src="resources/img/sample_contract.png"></div>
                     <div class="customer-img"><img src="resources/img/sample_contract_customer.png"></div>
                 </div>
-                <div class="review-item">
+                <div class="contract-item">
                     <div class="contract-img"><img src="resources/img/sample_contract.png"></div>
                     <div class="customer-img"><img src="resources/img/sample_contract_customer.png"></div>
                 </div>
-                <div class="review-item">
+                <div class="contract-item">
                     <div class="contract-img"><img src="resources/img/sample_contract.png"></div>
                     <div class="customer-img"><img src="resources/img/sample_contract_customer.png"></div>
                 </div>
-                <div class="review-item">
+                <div class="contract-item">
                     <div class="contract-img"><img src="resources/img/sample_contract.png"></div>
                     <div class="customer-img"><img src="resources/img/sample_contract_customer.png"></div>
                 </div>
-                <div class="review-item">
+                <div class="contract-item">
                     <div class="contract-img"><img src="resources/img/sample_contract.png"></div>
                     <div class="customer-img"><img src="resources/img/sample_contract_customer.png"></div>
                 </div>
-                <div class="review-item">
+                <div class="contract-item">
                     <div class="contract-img"><img src="resources/img/sample_contract.png"></div>
                     <div class="customer-img"><img src="resources/img/sample_contract_customer.png"></div>
                 </div>
-                <div class="review-item">
+                <div class="contract-item">
                     <div class="contract-img"><img src="resources/img/sample_contract.png"></div>
                     <div class="customer-img"><img src="resources/img/sample_contract_customer.png"></div>
                 </div>
@@ -433,7 +433,7 @@
                 <a href="hotdeal.html">온앤온핫딜</a>
                 <a href="review.html">생생리얼후기</a>
                 <a href="autodirectcar_app.html">공식앱</a>
-                <a href="allcar_contact.html">견적문의</a>
+                <a href="allcar_contract.html">견적문의</a>
             </div>
             <p>
                 <span>법인상호 : (주)오토다이렉트카</span>
@@ -728,15 +728,6 @@ $(document).ready(function(){
         autoplayTimeout:3000,
         autoplayHoverPause:true,
         responsive:{
-            320:{
-                items:1
-            },
-            768:{
-                items:1
-            },
-            1024:{
-                items:1
-            },
             1260:{
                 items:1
             }
@@ -744,7 +735,7 @@ $(document).ready(function(){
     });
 
 
-  var owl = $('.owl-carousel.review-right');
+  var owl = $('.owl-carousel.contract-right');
         owl.owlCarousel({
         margin: 20,
         loop: true,
