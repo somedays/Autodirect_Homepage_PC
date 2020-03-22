@@ -86,7 +86,7 @@ strong {font-weight:600;}
 table,tr,td,thead,tbody,tfoot{border-spacing:0;border-collapse:collapse;}
 ul, ol, li{list-style:none;padding:0;margin:0;}
 a{text-decoration:none;color:#323232;}
-a:hover{color:#c2c2c2;}
+a:hover{color:#d70000;}
 select:hover {cursor:pointer;}
 button:focus{outline:none;}
 input,button,select,textarea {outline:none;font-family:'Noto Sans KR', sans-serif;font-weight:400;}
@@ -456,31 +456,126 @@ input,button,select,textarea {outline:none;font-family:'Noto Sans KR', sans-seri
 .list-paging a.btn-paging.next {background-position:-60px 0;}
 .list-paging a.btn-paging.last {background-position:-90px 0;}
 
+.quotation-nav {background-color:#fe9705;box-shadow:3px 0 10px rgba(0,0,0,0.05)}
+.quotation-nav > ul {width:1260px;margin:0 auto;}
+.quotation-nav > ul > li {margin-right:60px;}
+.quotation-nav li {display:inline-block;font-size:18px;height:60px;line-height:60px;color:#fff;}
+.quotation-nav li a {color:#fff;font-weight:300;}
+.quotation-nav li.active > a {font-weight:500;}
+.quotation-nav li > ul {display:inline-block;margin-left:20px;}
+.quotation-nav li > ul > li:before {content:"-";display:inline-block;padding:0 3px;}
+.quotation-nav li > ul > li:first-child:before {content:"";}
 
+.quotation-wrap {height:950px;}
+.quotation-wrap:after {content:"";display:block;clear:both;}
+.quotation-ctn {position:relative;display:inline-block;width:630px;text-align:left;box-sizing:border-box;padding:50px 0 130px;}
+.quotation-left {position:relative;float:left;width:calc(50% - 100px);height:100%;background-color:#f2f2f2;text-align:right;}
+.quotation-right {position:relative;float:left;width:calc(50% + 100px);height:100%;text-align:left;}
+.quotation-left .quotation-ctn {width:530px;}
+.quotation-right .quotation-ctn {width:730px;}
+.quotation-ctn .brand-list h3 {font-size:18px;font-weight:500;line-height:38px;border-bottom:1px solid #ccc;margin-right:50px;color:#222;}
+.quotation-ctn .brand-list ul {padding:0 50px 20px 0;}
+.quotation-ctn .brand-list ul:after {content:"";display:block;clear:both;}
+.quotation-ctn .brand-list li {float:left;width:25%;text-align:center;margin-top:20px;}
+.quotation-ctn .brand-list li a {display:inline-block;width:105px;height:105px;box-sizing:border-box;background-color:#fff;border:2px solid #fff;border-radius:50%;line-height:100px;text-align:center;font-size:0;translate:all 0.3s;}
+.quotation-ctn .brand-list li a img {vertical-align:middle;}
+.quotation-ctn .brand-list li a.selected {border-color:#d70000;}
 
+.quotation-ctn .car-list ul {padding:0 0 20px 50px;}
+.quotation-ctn .car-list ul:after {content:"";display:block;clear:both;}
+.quotation-ctn .car-list li {float:left;width:33.3333333333%;text-align:center;margin-top:20px;}
+.quotation-ctn .car-list li a {display:block;text-align:center;box-sizing:border-box;}
+.quotation-ctn .car-list li a .car-img {display:inline-block;width:194px;height:194px;line-height:190px;font-size:0;text-align:center;border:2px solid #fff;box-sizing:border-box;translate:all 0.3s;}
+.quotation-ctn .car-list li a .car-img img {vertical-align:middle;max-width:100%;}
+.quotation-ctn .car-list li a .car-name {text-align:center;font-size:16px;padding:5px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;translate:all 0.3s;}
+.quotation-ctn .car-list li a.selected .car-img {border-color:#d70000;}
+.quotation-ctn .car-list li a.selected .car-name {color:#d70000;}
 
-.quotation-area {background-color:#eee;padding:60px 0;}
-.quotation-area.white-bg {background-color:#fff;}
-.quotation-wrap {position:relative;width:1260px;margin:0 auto;}
-.quotation-left {position:absolute;top:0;left:0;}
-.quotation-left h2 {font-size:40px;font-weight:600;color:#2e2ba8;}
-.quotation-left strong {display:block;font-size:28px;font-weight:500;color:#333;padding-top:10px;}
-.quotation-left p {font-size:16px;font-weight:400;color:#777;}
-.bottom-quo-form {padding-left:250px;}
-.bottom-quo-form table {table-layout:fixed;width:100%;}
-.bottom-quo-form table td {padding:5px;vertical-align:top;}
-.bottom-quo-form table td.tc {text-align:center;padding-top:20px;}
-.bottom-quo-form select {-webkit-appearance:none;appearance:none;width:100%;height:50px;line-height:48px;border:1px solid #d0d0d0;color:#333;font-size:16px;box-sizing:border-box;padding:0 20px;background:#fff url(../img/bottom_quotation_arrow.png) 100% 50% no-repeat;}
-.bottom-quo-form select::-ms-expand {display:none;}
-.bottom-quo-form select > option {color:#121212;}
-.bottom-quo-form input[type="text"] {width:100%;height:50px;line-height:48px;border:1px solid #d0d0d0;background-color:#fff;color:#333;font-size:16px;box-sizing:border-box;padding:0 20px;}
-.bottom-quo-form textarea {resize:none;border:1px solid #d0d0d0;background-color:#fff;width:100%;height:107px;overflow:auto;font-size:16px;color:#333;padding:10px;box-sizing:border-box;}
-.bottom-quo-form a.act-btn {display:inline-block;line-height:54px;height:56px;border-bottom:3px solid #2e2ba8;width:440px;box-sizing:border-box;text-align:center;color:#fff;background-color:#5450ff;font-size:26px;font-weight:600;}
-.bottom-quo-form a.act-btn:hover {background-color:#2e2ba8;}
+.quotation-ctn .quotation-btns {position:absolute;bottom:50px;left:0;width:100%;text-align:center;font-size:0;}
+.quotation-ctn .quotation-btns .quo-btn {display:inline-block;width:305px;height:50px;line-height:50px;text-align:center;font-size:20px;color:#222;border:1px solid #ccc;margin:0 10px;font-weight:500;}
+.quotation-ctn .quotation-btns .quo-btn:hover {border-color:#222;}
+.quotation-ctn .quotation-btns .quo-btn.active {border-color:#d70000;color:#d70000;}
+.quotation-ctn .quotation-btns .quo-btn.active:hover {background-color:#d70000;color:#FFF;}
 
+.quotation-selected-info h2 {font-size:28px;font-weight:600;}
+.selected-list {width:480px;border-top:1px solid #222;border-bottom:1px solid #222;padding:20px 0;color:#222;}
+.selected-list ul li {position:relative;font-size:16px;line-height:26px;font-weight:300;}
+.selected-list ul.payment li {line-height:32px;}
+.selected-list ul h3 {font-size:18px;font-weight:600;padding-top:10px;}
+.selected-list ul li strong {display:block;padding-right:130px;font-size:18px;font-weight:600;}
+.selected-list ul li span {display:block;padding-right:130px;}
+.selected-list ul li em {position:absolute;top:0;right:0;line-height:26px;font-style:normal;letter-spacing:0;}
+.selected-list ul.trim li em {font-weight:600;letter-spacing:-1px;}
+
+.selected-info {position:relative;font-size:13px;padding:5px 0 10px 0;border-bottom:1px solid #ccc;padding-left:15px;}
+.selected-info:before {content:"※";position:absolute;top:5px;left:0;}
+
+.selected-car-price {position:relative;width:480px;padding-top:20px;}
+.selected-car-price span {display:block;font-size:16px;font-weight:500;padding-top:5px;}
+.selected-car-price strong {position:absolute;top:0;right:0;line-height:26px;font-style:normal;letter-spacing:0;font-size:32px;font-weight:600;padding-top:20px;color:#d70000;}
+.selected-car-price strong:after {content:"원";font-size:22px;font-weight:400;padding-left:2px;}
+
+.selected-car-image {position:absolute;bottom:50px;right:50px;width:480px;text-align:center;}
+.selected-car-image img {max-width:100%;max-height:200px;}
 
 .aside-banner {position:fixed;top:165px;right:63px;z-index:90;width:100px;overflow:hidden;background-color:#fff;box-sizing:border-box;box-shadow:0 0 15px rgba(0,0,0,0.2)}
 .aside-banner.fixed {position:fixed;top:165px;}
+
+.trim-list {padding-left:50px;}
+.trim-list h3 {font-size:18px;font-weight:600;color:#222;}
+.trim-list li {position:relative;line-height:55px;border-bottom:1px solid #ccc;font-size:16px;color:#222;}
+
+.trim-list ul {padding-top:25px;width:630px;}
+.trim-list .trim-name {display:block;padding-right:130px;font-weight:300;}
+.trim-list .trim-name label {display:block;cursor:pointer;}
+.trim-list .trim-name input {display:none;}
+.trim-list .trim-name label:before {content:"";display:inline-block;width:20px;height:20px;background:url(../img/quotation_radio_icon.png) 0 0 no-repeat;vertical-align:sub;margin-right:10px;}
+.trim-list .trim-name input:checked + label {color:#d70000;}
+.trim-list .trim-name input:checked + label:before {background-position:0 100%;}
+.trim-list .trim-name .trim-icon {display:inline-block;border:1px solid #d70056;width:60px;height:20px;line-height:18px;text-align:center;font-size:12px;font-weight:300;font-style:normal;box-sizing:border-box;margin-left:10px;}
+.trim-list .trim-name .trim-icon.new {border-color:#d70056;color:#d70056;}
+.trim-list .trim-name .trim-icon.hot {border-color:#7500d8;color:#7500d8;}
+.trim-list .trim-name .trim-icon.limit {border-color:#00945e;color:#00945e;}
+.trim-list .trim-name .trim-icon.best {border-color:#0060d7;color:#0060d7;}
+.trim-list .trim-price {position:absolute;top:0;right:0;font-style:normal;letter-spacing:0;font-weight:300;}
+
+.trim-list .trim-best {position:relative;border:1px solid #ccc;padding:30px;width:630px;box-sizing:border-box;}
+.trim-list .trim-best .best-box {position:absolute;top:0;right:0;background-color:#d70000;border:1px solid #be0000;color:#fff;padding:9px 16px;font-size:16px;font-weight:500;line-height:20px;text-align:center;box-sizing:border-box;}
+.trim-list .trim-best .trim-name {font-size:18px;font-weight:500;padding:15px 0;}
+.trim-list .trim-best .trim-desc {font-size:14px;font-weight:300;}
+.trim-list .trim-best .trim-price {position:relative;top:auto;right:auto;padding-top:30px;color:#d70000;font-weight:500;}
+.trim-list .trim-best .trim-btn {position:absolute;bottom:30px;right:30px;display:inline-block;border:1px solid #d70000;width:110px;height:30px;line-height:28px;text-align:center;color:#d70000;font-weight:500;}
+.trim-list .trim-best .trim-btn:hover {background-color:#d70000;color:#fff;}
+.trim-list .trim-best.on {border-color:#d70000;background-color:#fff1f1}
+
+.option-list {padding-left:50px;}
+.option-list h3 {font-size:18px;font-weight:600;color:#222;}
+.option-list li {position:relative;line-height:55px;border-bottom:1px solid #ccc;font-size:16px;color:#222;}
+.option-list ul {width:630px;}
+.option-list .option-name {display:block;padding-right:130px;font-weight:300;}
+.option-list .option-name input {display:none;}
+.option-list .option-name label {display:block;cursor:pointer;}
+.option-list .option-name label:before {content:"";display:inline-block;width:20px;height:20px;background:url(../img/quotation_radio_icon.png) 0 0 no-repeat;vertical-align:sub;margin-right:10px;}
+.option-list .option-name input:checked + label {color:#d70000;}
+.option-list .option-name input:checked + label:before {background-position:0 100%;}
+.option-list .option-price {position:absolute;top:0;right:0;font-style:normal;letter-spacing:0;font-weight:300;}
+
+.color-box {padding:40px 80px 27px 80px;}
+.color-box h3 {font-size:18px;font-weight:600;color:#222;padding-bottom:30px;margin-left:-30px;}
+.color-list {position:relative;}
+.color-list .color-item input {display:none;}
+.color-list .color-item label {display:block;cursor:pointer;text-align:center;}
+.color-list .color-item label .colorchip {display:inline-block;border:1px solid #ccc;height:70px;width:124px;}
+.color-list .color-item label .color-name {display:inline-block;font-size:14px;text-align:center;width:124px;height:44px;overflow:hidden;color:#222;}
+.color-list .color-item input:checked + label .colorchip {border-color:#d70000;}
+.color-list .color-item input:checked + label .color-name {color:#d70000;}
+.color-list.owl-carousel .owl-nav {position:absolute;top:10px;left:-40px;right:-40px;}
+.color-list.owl-carousel .owl-nav button.owl-prev{margin:0;}
+.color-list.owl-carousel .owl-nav button.owl-next,
+.color-list.owl-carousel .owl-nav button.owl-prev {position:absolute;top:0;left:0;margin:0;transform:none;width:30px;height:60px;background:url(../img/color_list_arrow.png) 0 0 no-repeat;}
+.color-list.owl-carousel .owl-nav button.owl-next span,
+.color-list.owl-carousel .owl-nav button.owl-prev span {display:none;}
+.color-list.owl-carousel .owl-nav button.owl-next {left:auto;right:0;background-position:100% 0;}
 
 .aside-info {padding:30px 10px 20px 10px;text-align:center;background-color:#ff521d;color:#fff;}
 .aside-info .tel-info span {display:block;font-size:15px;}
@@ -510,88 +605,6 @@ input,button,select,textarea {outline:none;font-family:'Noto Sans KR', sans-seri
 .footer .company-info p.copylight {padding-left:15px;line-height:29px;letter-spacing:0;}
 .footer .footer-banner {float:right;}
 .footer .footer-banner img {margin-left:15px;}
-
-
-.popup-quotation {position:fixed;top:0;left:0;right:0;bottom:0;z-index:100;background-color:rgba(0,0,0,0.9);display:none;}
-.popup-quotation.on {display:block;}
-.popup-quotation .popup-box {background-color:#fff;position:absolute;top:50px;left:50%;bottom:50px;width:1010px;transform:translateX(-50%);overflow:auto;border-radius:20px;}
-.popup-quotation .popup-box .popup-tt {position:absolute;top:0;left:0;right:0;border-radius:20px 20px 0 0;height:90px;}
-.popup-quotation .popup-box .popup-tt h2 {text-align:center;padding:30px 0 10px 0;font-size:32px;}
-.popup-quotation .popup-box .popup-tt .popup-close {position:absolute;right:30px;top:30px;width:40px;height:40px;padding:0;background-color:transparent;border:0 none;cursor:pointer;}
-.popup-quotation .popup-box .popup-ctn {position:absolute;top:90px;left:0;bottom:20px;right:0;overflow:auto;padding-left:5px;}
-.popup-quotation .select-item {float:left;box-sizing:border-box;border-left:1px solid #eee;box-sizing:border-box;}
-.popup-quotation .select-item:nth-child(1) {width:215px;border-left:0 none;}
-.popup-quotation .select-item:nth-child(2) {width:285px;}
-.popup-quotation .select-item:nth-child(3) {width:500px;}
-.popup-quotation .select-item:nth-child(4) {width:500px;height:175px;border-left:0 none;}
-.popup-quotation .select-item:nth-child(5) {float:right;width:500px;height:325px;}
-.popup-quotation .select-item:nth-child(6) {width:500px;height:150px;}
-.popup-quotation .select-item:nth-child(7) {width:500px;border-left:0 none;border-bottom:1px solid #eee;}
-.popup-quotation .select-item:nth-child(8) {width:500px;border-bottom:1px solid #eee;}
-.popup-quotation .select-item h3 {height:45px;line-height:45px;background-color:#777;padding:0 25px;color:#fff;}
-.popup-quotation .select-item ul {list-style:none;margin:0;padding:0;height:170px;overflow:auto;box-sizing:border-box;}
-.popup-quotation .mCSB_inside > .mCSB_container {margin-right:5px;padding:10px 0;}
-.popup-quotation .mCSB_scrollTools {width:4px;}
-.popup-quotation .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {background-color:#bdbdbd;}
-.popup-quotation .select-item ul li {height:26px;line-height:26px;font-size:14px;}
-.popup-quotation .select-item ul li input[type="radio"],
-.popup-quotation .select-item ul li input[type="checkbox"] {display:none;}
-.popup-quotation .select-item ul li input[type="radio"] + label,
-.popup-quotation .select-item ul li input[type="checkbox"] + label {position:relative;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;cursor:pointer;padding:0 20px;line-height:26px;}
-.popup-quotation .select-item ul li input[type="radio"] + label:hover,
-.popup-quotation .select-item ul li input[type="checkbox"] + label:hover {background-color:#eee;}
-.popup-quotation .select-item ul li input[type="radio"] + label:before,
-.popup-quotation .select-item ul li input[type="checkbox"] + label:before {content:"";display:inline-block;width:16px;height:16px;background:#fff;border:1px solid #bdbdbd;margin-right:6px;vertical-align:middle;box-sizing:border-box;}
-.popup-quotation .select-item ul li input[type="radio"] + label > span,
-.popup-quotation .select-item ul li input[type="checkbox"] + label > span {display:inline-block;line-height:26px;vertical-align:middle;}
-.popup-quotation .select-item ul li input[type="radio"] + label > strong,
-.popup-quotation .select-item ul li input[type="checkbox"] + label > strong {position:absolute;top:0;right:20px;line-height:26px;font-weight:400;font-size:14px;text-align:right;}
-.popup-quotation .select-item ul li input[type="radio"]:checked + label:before,
-.popup-quotation .select-item ul li input[type="checkbox"]:checked + label:before {border:2px solid #e00000;background:#fff url(../img/pop_select_check.png) 50% 50% no-repeat;}
-
-.popup-quotation .select-item.car-option h3 {background-color:#555;}
-.popup-quotation .select-item.car-option ul {height:130px;}
-
-.popup-quotation .select-item.car-color h3 {background-color:#555;}
-.popup-quotation .select-item.car-color .color-list {padding:0 30px;box-sizing:border-box;}
-.popup-quotation .select-item.car-color .color-list .color-item {text-align:center;padding-top:7px;}
-.popup-quotation .select-item.car-color .color-list .color-item input[type="radio"] {display:none;}
-.popup-quotation .select-item.car-color .color-list .color-item input[type="radio"] + label {display:inline-block;padding:8px 8px 0 8px;margin:0 auto;width:100px;height:90px;overflow:hidden;border:2px solid transparent;box-sizing:border-box;cursor:pointer;}
-.popup-quotation .select-item.car-color .color-list .color-item input[type="radio"]:checked + label {border:2px solid #e00000;}
-.popup-quotation .select-item.car-color .color-list .color-item .color-box {display:inline-block;width:60px;height:20px;border:1px solid #bdbdbd;box-sizing:border-box;}
-.popup-quotation .select-item.car-color .color-list .color-item span {display:block;font-size:14px;line-height:15px;color:#555;}
-.popup-quotation .select-item.car-color .color-list .owl-nav {position:absolute;top:0;left:0;right:0;}
-.popup-quotation .select-item.car-color .color-list .owl-nav button.owl-next,
-.popup-quotation .select-item.car-color .color-list .owl-nav button.owl-prev {position:absolute;top:0;left:0;display:inline-block;width:30px;height:90px;font-size:36px;font-weight:600;line-height:40px;}
-.popup-quotation .select-item.car-color .color-list .owl-nav button.owl-next {position:absolute;top:0;right:0;left:auto;}
-
-.popup-quotation .select-item.car-price h3 {background-color:#555;}
-.popup-quotation .select-item.car-price .car-price {height:280px;box-sizing:border-box;padding:20px 0 0 0;}
-.popup-quotation .select-item.car-price .car-price .car-image {height:120px;line-height:120px;text-align:center;}
-.popup-quotation .select-item.car-price .car-price .car-image img {max-height:100px;vertical-align:middle;}
-.popup-quotation .select-item.car-price .car-price .car-info strong {display:block;text-align:center;font-size:20px;}
-.popup-quotation .select-item.car-price .car-price .car-info span {display:block;text-align:center;}
-.popup-quotation .select-item.car-price .car-price .price-info {text-align:center;color:#e00000;}
-.popup-quotation .select-item.car-price .car-price .price-info strong {font-size:42px;font-weight:600;}
-.popup-quotation .select-item.car-price .car-price .price-info span {font-size:28px;}
-
-.popup-quotation .select-item.form-area h3 {background-color:#333;}
-.popup-quotation .select-item.form-area .car-form {padding:20px 10px 10px 20px;}
-.popup-quotation .select-item.form-area .car-form:after {content:"";display:block;clear:both;}
-.popup-quotation .select-item.form-area .form-item {position:relative;float:left;width:100%;padding:0 10px 10px 0;box-sizing:border-box;}
-.popup-quotation .select-item.form-area .form-item.w50 {width:50%;}
-.popup-quotation .select-item.form-area .form-item select,
-.popup-quotation .select-item.form-area .form-item input {height:40px;border:1px solid #ccc;width:100%;margin:0;padding:0 0 0 10px;box-sizing:border-box;font-size:14px;}
-.popup-quotation .select-item.form-area .form-item select {cursor:pointer;}
-.popup-quotation .select-item.form-area .form-item label {position:absolute;display:block;top:0;left:0;height:40px;line-height:40px;font-size:14px;}
-.popup-quotation .select-item.form-area .form-item.req label:after {content:"*";display:inline-block;color:#e00000;font-size:16px;padding-left:3px;}
-.popup-quotation .select-item.form-area .car-form.input-list .form-item {padding-left:110px;}
-
-.popup-quotation .popup-footer {clear:both;padding:20px 0;text-align:center;}
-.popup-quotation .popup-footer .user-agree {font-size:14px;}
-.popup-quotation .popup-footer .footer-btnarea {padding-top:15px;}
-.popup-quotation .popup-footer .quotation-submit {display:inline-block;padding:10px 100px;background-color:#e00000;color:#fff;border:0 none;border-bottom:4px solid #af0000;font-size:20px;cursor:pointer;}
-.popup-quotation .popup-footer .quotation-submit:hover {border-bottom-color:#e00000;}
 
 .popup-policy {position:fixed;top:0;left:0;right:0;bottom:0;z-index:100;background-color:rgba(0,0,0,0.9);display:none;}
 .popup-policy.on {display:block;}
