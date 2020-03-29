@@ -23,11 +23,11 @@
             <ul class="top-nav">
                 <li><a href="#">업체소개</a>
                     <ul class="top-nav-sub">
-                        <li><a href="#">업체소개</a></li>
-                        <li><a href="#">수상내역</a></li>
-                        <li><a href="#">언론홍보</a></li>
-                        <li><a href="#">공지사항</a></li>
-                        <li><a href="#">공식어플</a></li>
+                        <li><a href="company.html">회사소개</a></li>
+                        <li><a href="awards.html">수상내역</a></li>
+                        <li><a href="media.html">언론홍보</a></li>
+                        <li><a href="notice.html">공지사항</a></li>
+                        <li><a href="app_intro.html">공식어플</a></li>
                     </ul>
                 </li>
                 <li><a href="#">장기렌트</a></li>
@@ -475,6 +475,328 @@
     <a href="#" class="btn-gotop">TOP ▲</a>
 </div>
 
+<!-- quick_banner -->
+<div class="footer-quick">
+    <div class="quick-menus">
+        <a href="javascript:void(0);" class="quick-btn tel"></a>
+        <a href="javascript:void(0);" id="kakao" class="quick-btn kakao"></a>
+        <a href="javascript:void(0);" id="quotation" class="quick-btn quotation"></a>
+        <a href="javascript:void(0);" id="location" class="quick-btn location"></a>
+        <a href="#" class="quick-btn top" title="맨 위로"></a>
+    </div>
+    <div class="quick-ctn kakao" id="kakao-ctn">
+        <div class="quick-ctn-wrap">
+            <div class="quick-left"><img src="resources/img/img_quick_kakao.png"></div>
+            <div class="quick-right">
+                <div class="quick-form kakao">
+                    <div class="form-item">
+                        <label>카카오톡 아이디로 상담</label>
+                        <input type="text" placeholder="카카오톡 아이디">
+                        <input type="text" placeholder="문의차량">
+                        <a href="javascript:void(0);" class="form-btn-kakao">카카오톡 상담하기</a>
+                    </div>
+                    <div class="form-item">
+                        <label>플러스 친구 채널에서 상담</label>
+                        <a href=""><img src="resources/img/btn_kakao_plus.png"></a>
+                    </div>
+                    <div class="form-item contact-info"><img src="resources/img/img_quick_kakao2.png"></div>
+                </div>
+            </div>
+            <button type="button" class="quick-close"></button>
+        </div>
+    </div>
+    <div class="quick-ctn quotation" id="quotation-ctn">
+        <div class="quick-ctn-wrap">
+            <div class="quick-left"><img src="resources/img/img_quick_quotation.png"></div>
+            <div class="quick-right">
+                <div class="quick-form quotation">
+                    <div class="form-item w50 required">
+                        <label>이름(법인명)</label>
+                        <input type="text">
+                    </div>
+                    <div class="form-item w50 required">
+                        <label>전화번호</label>
+                        <input type="text">
+                    </div>
+                    <div class="form-item w50">
+                        <label>구매유형</label>
+                        <select><option></option></select>
+                    </div>
+                    <div class="form-item w50">
+                        <label>상담가능시간</label>
+                        <select><option></option></select>
+                    </div>
+                    <div class="form-item">
+                        <label class="vt">문의내용</label>
+                        <textarea></textarea>
+                    </div>
+                    <div class="form-item w50">
+                        <input type="checkbox" class="quick-form-checkbox" id="quick_quo_policy"><label for="quick_quo_policy">개인정보취급방침 동의</label>
+                    </div>
+                    <div class="form-item w50 tr">
+                        <a href="javascript:void(0);" class="form-btn-policy">개인정보취급방침보기</a>
+                    </div>
+                    <div class="form-item">
+                        <a href="javascript:void(0);" class="form-btn-quotation">견적문의하기</a>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="quick-close"></button>
+        </div>
+    </div>
+    <div class="quick-ctn location" id="location-ctn">
+        <div class="quick-ctn-wrap">
+            <div class="quick-left"><img src="resources/img/img_quick_location.png"></div>
+            <div class="quick-right">
+                <div class="quick-form location">
+                    <div class="form-item w50 required">
+                        <label>이름(법인명)</label>
+                        <input type="text">
+                    </div>
+                    <div class="form-item w50 required">
+                        <label>전화번호</label>
+                        <input type="text">
+                    </div>
+                    <div class="form-item required">
+                        <label>방문희망주소지</label>
+                        <input type="text">
+                    </div>
+                    <div class="form-item">
+                        <label class="vt">문의내용</label>
+                        <textarea></textarea>
+                    </div>
+                    <div class="form-item w70">
+                        <input type="checkbox" class="quick-form-checkbox" id="quick_quo_policy"><label for="quick_quo_policy">개인정보취급방침 동의</label>
+                    </div>
+                    <div class="form-item w30 tr">
+                        <a href="javascript:void(0);" class="form-btn-policy">개인정보취급방침보기</a>
+                    </div>
+                    <div class="form-item">
+                        <a href="javascript:void(0);" class="form-btn-location">견적문의하기</a>
+                    </div>
+                </div>
+                <div class="quick-location">
+                    <div class="location-tab">
+                        <div class="tab-item on" id="branch1">성수지사</div>
+                        <div class="tab-item" id="branch2">부천지사</div>
+                    </div>
+                    <div class="location-tab-ctn" id="branch1-ctn">
+                        <div class="branch-map" id="branch1-map"></div>
+                        <div class="branch-info">지하철 2호선 성수역 5분거리</div>
+                    </div>
+                    <div class="location-tab-ctn" id="branch2-ctn">
+                        <div class="branch-map" id="branch2-map"></div>
+                        <div class="branch-info">지하철 1호선 부천역 5분거리</div>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="quick-close"></button>
+        </div>
+    </div>
+</div>
+<div class="footer-quick-shadow"></div>
+<div class="popup-quotation">
+    <div class="popup-box">
+        <div class="popup-tt">
+            <h2>실시간 견적문의</h2>
+            <button type="button" class="popup-close"><img src="resources/img/popup_close.png"></button>
+        </div>
+        <div class="popup-ctn">
+            <div class="select-item">
+                <h3>제조사 선택</h3>
+                <ul>
+                    <li><input type="radio" id="check_brand1" name="check_brand" /><label for="check_brand1"><span>현대</span></label></li>
+                    <li><input type="radio" id="check_brand2" name="check_brand" /><label for="check_brand2"><span>기아</span></label></li>
+                    <li><input type="radio" id="check_brand3" name="check_brand" /><label for="check_brand3"><span>르노삼성</span></label></li>
+                    <li><input type="radio" id="check_brand4" name="check_brand" /><label for="check_brand4"><span>쉐보레</span></label></li>
+                    <li><input type="radio" id="check_brand5" name="check_brand" /><label for="check_brand5"><span>BMW</span></label></li>
+                    <li><input type="radio" id="check_brand6" name="check_brand" /><label for="check_brand6"><span>벤츠</span></label></li>
+                    <li><input type="radio" id="check_brand7" name="check_brand" /><label for="check_brand7"><span>쉐보레</span></label></li>
+                    <li><input type="radio" id="check_brand8" name="check_brand" /><label for="check_brand8"><span>BMW</span></label></li>
+                    <li><input type="radio" id="check_brand9" name="check_brand" /><label for="check_brand9"><span>벤츠</span></label></li>
+                </ul>
+            </div>
+            <div class="select-item">
+                <h3>차량 선택</h3>
+                <ul>
+                    <li><input type="radio" id="check_car1" name="check_car" /><label for="check_car1"><span>더 뉴 그랜저 hybrid</span></label></li>
+                    <li><input type="radio" id="check_car2" name="check_car" /><label for="check_car2"><span>더 뉴 그랜저 hybrid</span></label></li>
+                    <li><input type="radio" id="check_car3" name="check_car" /><label for="check_car3"><span>더 뉴 그랜저 hybrid</span></label></li>
+                    <li><input type="radio" id="check_car4" name="check_car" /><label for="check_car4"><span>더 뉴 그랜저 hybrid</span></label></li>
+                    <li><input type="radio" id="check_car5" name="check_car" /><label for="check_car5"><span>더 뉴 그랜저 hybrid</span></label></li>
+                    <li><input type="radio" id="check_car6" name="check_car" /><label for="check_car6"><span>더 뉴 그랜저 hybrid</span></label></li>
+                </ul>
+            </div>
+            <div class="select-item">
+                <h3>등급 선택</h3>
+                <ul>
+                    <li><input type="radio" id="check_grade1" name="check_grade" /><label for="check_grade1"><span>2020년형 가솔린 2.5 프리미엄</span><strong>345,000,000원</strong></label></li>
+                    <li><input type="radio" id="check_grade2" name="check_grade" /><label for="check_grade2"><span>2020년형 가솔린 2.5 프리미엄</span><strong>345,000,000원</strong></label></li>
+                    <li><input type="radio" id="check_grade3" name="check_grade" /><label for="check_grade3"><span>2020년형 가솔린 2.5 프리미엄</span><strong>345,000,000원</strong></label></li>
+                    <li><input type="radio" id="check_grade4" name="check_grade" /><label for="check_grade4"><span>2020년형 가솔린 2.5 프리미엄</span><strong>345,000,000원</strong></label></li>
+                    <li><input type="radio" id="check_grade5" name="check_grade" /><label for="check_grade5"><span>2020년형 가솔린 2.5 프리미엄</span><strong>345,000,000원</strong></label></li>
+                    <li><input type="radio" id="check_grade6" name="check_grade" /><label for="check_grade6"><span>2020년형 가솔린 2.5 프리미엄</span><strong>345,000,000원</strong></label></li>
+                    <li><input type="radio" id="check_grade7" name="check_grade" /><label for="check_grade7"><span>2020년형 가솔린 2.5 프리미엄</span><strong>345,000,000원</strong></label></li>
+                    <li><input type="radio" id="check_grade8" name="check_grade" /><label for="check_grade8"><span>2020년형 가솔린 2.5 프리미엄</span><strong>345,000,000원</strong></label></li>
+                    <li><input type="radio" id="check_grade9" name="check_grade" /><label for="check_grade9"><span>2020년형 가솔린 2.5 프리미엄</span><strong>345,000,000원</strong></label></li>
+                </ul>
+            </div>
+            <div class="select-item car-option">
+                <h3>옵션 선택</h3>
+                <ul>
+                    <li><input type="radio" id="check_grade1" name="check_grade" /><label for="check_grade1"><span>현대</span></label></li>
+                    <li><input type="radio" id="check_grade2" name="check_grade" /><label for="check_grade2"><span>기아</span></label></li>
+                    <li><input type="radio" id="check_grade3" name="check_grade" /><label for="check_grade3"><span>르노삼성</span></label></li>
+                    <li><input type="radio" id="check_grade4" name="check_grade" /><label for="check_grade4"><span>쉐보레</span></label></li>
+                    <li><input type="radio" id="check_grade5" name="check_grade" /><label for="check_grade5"><span>BMW</span></label></li>
+                    <li><input type="radio" id="check_grade4" name="check_grade" /><label for="check_grade4"><span>쉐보레</span></label></li>
+                    <li><input type="radio" id="check_grade5" name="check_grade" /><label for="check_grade5"><span>BMW</span></label></li>
+                    <li><input type="radio" id="check_grade6" name="check_grade" /><label for="check_grade6"><span>벤츠</span></label></li>
+                    <li><input type="radio" id="check_grade7" name="check_grade" /><label for="check_grade7"><span>쉐보레</span></label></li>
+                    <li><input type="radio" id="check_grade8" name="check_grade" /><label for="check_grade8"><span>BMW</span></label></li>
+                    <li><input type="radio" id="check_grade9" name="check_grade" /><label for="check_grade9"><span>벤츠</span></label></li>
+                </ul>
+            </div>
+            <div class="select-item car-price">
+                <h3>차량가격 (옵션 포함)</h3>
+                <div class="car-price">
+                    <div class="car-image"><img src="http://autoimg.danawa.com/photo/3563/model_600.png"></div>
+                    <div class="car-info">
+                        <strong>현대 더 뉴 그랜저 hybrid</strong>
+                        <span>2020년형 가솔린 2.5 프리미엄 초이스</span>
+                    </div>
+                    <div class="price-info">
+                        <strong>400,000,000</strong>
+                        <span>원</span>
+                    </div>
+                </div>
+            </div>
+            <div class="select-item car-color">
+                <h3>색상 선택</h3>
+                <div class="quo-color-list owl-carousel">
+                    <div class="color-item"><input type="radio" id="color_gp1" name="color_name"><label for="color_gp1"><div class="color-box" style="background-color:#ffffff"></div><span>화이트 크림 (WC9)</span></label></div>
+                    <div class="color-item"><input type="radio" id="color_gp2" name="color_name"><label for="color_gp2"><div class="color-box" style="background-color:#323232"></div><span>Color Name</span></label></div>
+                    <div class="color-item"><input type="radio" id="color_gp3" name="color_name"><label for="color_gp3"><div class="color-box" style="background-color:#323232"></div><span>Color Name</span></label></div>
+                    <div class="color-item"><input type="radio" id="color_gp4" name="color_name"><label for="color_gp4"><div class="color-box" style="background-color:#323232"></div><span>Color Name</span></label></div>
+                    <div class="color-item"><input type="radio" id="color_gp5" name="color_name"><label for="color_gp5"><div class="color-box" style="background-color:#323232"></div><span>Color Name</span></label></div>
+                    <div class="color-item"><input type="radio" id="color_gp6" name="color_name"><label for="color_gp6"><div class="color-box" style="background-color:#323232"></div><span>Color Name</span></label></div>
+                </div>
+            </div>
+            <div class="select-item form-area">
+                <h3>대여 조건 선택</h3>
+                <div class="car-form select-list">
+                    <div class="form-item w50"><select><option>이용방법 선택</option></select></div>
+                    <div class="form-item w50"><select><option>이용기간 선택</option></select></div>
+                    <div class="form-item w50"><select><option>보증금 선택</option></select></div>
+                    <div class="form-item w50"><select><option>7,000,000원</option></select></div>
+                    <div class="form-item w50"><select><option>선수금 선택</option></select></div>
+                    <div class="form-item w50"><select><option>7,000,000원</option></select></div>
+                    <div class="form-item w50"><select><option>연간 주행거리 선택</option></select></div>
+                    <div class="form-item w50"><select><option>상담 가능시간 선택</option></select></div>
+                </div>
+            </div>
+            <div class="select-item form-area">
+                <h3>고객 정보 입력 ( * 필수 )</h3>
+                <div class="car-form input-list">
+                    <div class="form-item req"><label for="user_name">이름(회사명)</label><input type="text" id="user_name"></div>
+                    <div class="form-item req"><label for="user_tel">전화번호('-'제외)</label><input type="text" id="user_tel"></div>
+                    <div class="form-item"><label for="user_mail">E-MAIL</label><input type="text" id="user_mail"></div>
+                    <div class="form-item"><label for="user_memo">상담메모</label><input type="text" id="user_memo"></div>
+                </div>
+            </div>
+            <div class="popup-footer">
+                <div class="user-agree"><input type="checkbox" id="user_agree" checked><label for="user_agree">개인정보 수집 이용등에 대한 동의</label></div>
+                <div class="footer-btnarea"><button type="button" class="quotation-submit">견적문의</button></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="popup-policy">
+    <div class="popup-box">
+        <div class="popup-tt">
+            <h2>개인정보 수집·이용 및 제공 동의</h2>
+            <button type="button" class="popup-close"><img src="resources/img/popup_close.png"></button>
+        </div>
+        <div class="popup-ctn">
+            <div class="policy-check check-all">
+                <input type="checkbox" id="policy_check_all"><label for="policy_check_all">전체동의</label>
+            </div>
+            <div class="policy-box">
+                <h3>개인정보 수집 및 이용 동의(필수)</h3>
+                <div class="policy-ctn">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>목적</th>
+                                <th>항목</th>
+                                <th>보유기간</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1. 서비스 제공에 관한 계약 이행<br>2. 회원의 관리</td>
+                                <td>성명, 전화번호(휴대폰), 이메일주소</td>
+                                <td>- 재화 및 서비스 공급완료시<br>- 회원 탈퇴시</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>※ 회사가 ㈜오토다이렉트카(http://autodirectcar.com)을 통하여 제공하는 서비스를 고객님이 이용하도록 하기 위해서 그 수집 및 이용이 필요한 최소한의 개인정보이므로 해당 항목에 동의를 해 주셔야 서비스 이용이 가능합니다.</p>
+                </div>
+                <div class="policy-check"><input type="checkbox" id="policy_check_1"><label for="policy_check_1">동의 합니다.</label></div>
+            </div>
+            <div class="policy-box">
+                <h3>개인정보 수집 및 이용 동의(선택)</h3>
+                <div class="policy-ctn">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>목적</th>
+                                <th>항목</th>
+                                <th>보유기간</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>3. 광고, 이벤트 및 프로모션<br>4. 고충처리</td>
+                                <td>주소, 전화번호(자택, 휴대폰), 이메일주소</td>
+                                <td>- 재화 및 서비스 공급완료시<br>- 회원 탈퇴시</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>※ 회사가 ㈜오토다이렉트카(http://autodirectcar.com)을 통하여 제공하는 서비스를 고객님이 보다 원활하게 이용하도록 하기 위해서 그 수집 및 이용이 필요한 개인정보이므로 해당 항목에 동의를 거부하시는 경우에도 위 개인정보를 수집 및 이용하는 서비스를 제외하고 나머지 서비스에 대해서는 이용이 가능합니다.</p>
+                </div>
+                <div class="policy-check"><input type="checkbox" id="policy_check_2"><label for="policy_check_2">동의 합니다.</label></div>
+            </div>
+            <div class="policy-box">
+                <h3>개인정보 처리 위탁에 대한 동의(선택)</h3>
+                <div class="policy-ctn">
+                    <table>
+                        <colgroup>
+                            <col>
+                            <col width="200px">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>목적</th>
+                                <th>항목</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>레드캡, 농협캐피탈(렌트), 농협캐피탈(리스), 나우카, 지모터스, 롯데렌터카, 롯데캐피탈,롯데오토리스, 메리츠캐피탈, 미래에셋캐피탈, 삼성카드, 신한카드, 아마존카, 아주캐피탈, 알페라, 오릭스, 우리카드, 조이렌트카, 하나캐피탈, 하모니렌트카, 한진렌터카, 현대캐피탈, 효성캐피탈, AJ렌터카, BNK캐피탈, CNH프리미어렌탈, DGB캐피탈, JB우리캐피탈, KB캐피탈(인천지점), KB캐피탈(수원지점), "KDB캐피탈, (산은캐피탈)", SK렌터카</td>
+                                <td>렌터카 중개 및 알선<br>(장기 렌터카/리스 서비스 제공)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="policy-check"><input type="checkbox" id="policy_check_3"><label for="policy_check_3">동의 합니다.</label></div>
+            </div>
+            <div class="popup-footer">
+                <div class="footer-btnarea"><button type="button" class="policy-submit">확인</button></div>
+            </div>
+        </div>
+    </div>
+</div>
 <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="resources/js/vticker-min.js"></script>
 <script src="resources/js/waypoints.min.js"></script>
@@ -499,11 +821,8 @@ $(window).scroll(function(){
 $(document).ready(function(){
 
   $('.youtube-list .scrollbar-inner').mCustomScrollbar();
-
   $('.select-item ul').mCustomScrollbar();
-
   $('.popup-ctn').mCustomScrollbar();
-
   $(".contract-list").mCustomScrollbar({
         axis:"x",
         advanced:{autoExpandHorizontalScroll:true}
@@ -571,6 +890,121 @@ $(document).ready(function(){
         $('.brand-list.owl-carousel .owl-item').removeClass('on');
         $(this).addClass('on');
     });
+
+
+    // Footer Quick
+    // KAKAO
+    jQuery('.quick-menus > .quick-btn.kakao').click(function(e){
+        jQuery('.quick-menus > .quick-btn').removeClass('on');
+        $(this).addClass('on');
+        jQuery('.footer-quick').addClass('on');
+        jQuery('.quick-ctn').removeClass('on');
+        jQuery('#kakao-ctn').addClass('on');
+    });
+    // Quotation
+    jQuery('.quick-menus > .quick-btn.quotation').click(function(e){
+        jQuery('.quick-menus > .quick-btn').removeClass('on');
+        $(this).addClass('on');
+        jQuery('.footer-quick').addClass('on');
+        jQuery('.quick-ctn').removeClass('on');
+        jQuery('#quotation-ctn').addClass('on');
+    });
+    // Location
+    jQuery('.quick-menus > .quick-btn.location').click(function(e){
+        var tab_id = jQuery(this).attr('id');
+        jQuery('.quick-menus > .quick-btn').removeClass('on');
+        $(this).addClass('on');
+        jQuery('.footer-quick').addClass('on');
+        jQuery('.quick-ctn').removeClass('on');
+        jQuery('#location-ctn').addClass('on');
+    });
+    // Close
+    jQuery('.quick-close').click(function(e){
+        jQuery('.footer-quick').removeClass('on');
+        jQuery('.quick-ctn').removeClass('on');
+        jQuery('.quick-menus > .quick-btn').removeClass('on');
+    });
+
+    
+    // Location
+    jQuery('.location-tab > .tab-item').click(function(e){
+        var tab_id = jQuery(this).attr('id');
+        jQuery('.location-tab > .tab-item').removeClass('on');
+        $(this).addClass('on');
+        jQuery('.location-tab-ctn').removeClass('on');
+        jQuery('#' + tab_id + '-ctn').addClass('on');
+    });
+    jQuery('.location-tab > .tab-item:first-child').trigger('click');
+
+
+    $('.timeattack-item .btn-area button').click(function() {
+        $('.popup-quotation').addClass('on');
+    });
+
+    $('.quick-quo-close').click(function() {
+        $('.quick-quotation').addClass('off');
+    });
+
+    $('.popup-quotation .popup-close').click(function() {
+        $('.popup-quotation').removeClass('on');
+    });
+    
+    $('.quotation-submit').click(function() {
+        $('.popup-policy').addClass('on');
+    });
+
+    $('.popup-policy .popup-close').click(function() {
+        $('.popup-policy').removeClass('on');
+    });
+
+    
+    var owl = $('.owl-carousel.quo-color-list');
+        owl.owlCarousel({
+        margin: 0,
+        loop: false,
+        nav: true,
+        dots: false,
+        touchDrag: true,
+        mouseDrag: true,
+        autoplay:false,
+        responsive:{
+            320:{
+                items:3
+            },
+            768:{
+                items:3
+            },
+            1024:{
+                items:3
+            },
+            1260:{
+                items:3
+            }
+        }
+    });
+
+    // 네이버 지도
+    var map = new naver.maps.Map('branch1-map', {
+        center: new naver.maps.LatLng(37.5461968,127.0573569),
+        zoom: 15
+    });
+    // 네이버 지도 (핀)
+    var marker = new naver.maps.Marker({
+        position: new naver.maps.LatLng(37.5461968,127.0573569),
+        map: map
+    });
+
+    // 네이버 지도
+    var map = new naver.maps.Map('branch2-map', {
+    center: new naver.maps.LatLng(37.5461968,127.0573569),
+    zoom: 15
+    });
+    // 네이버 지도 (핀)
+    var marker = new naver.maps.Marker({
+        position: new naver.maps.LatLng(37.5461968,127.0573569),
+        map: map
+    });
+
 
 });
 
