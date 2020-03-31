@@ -114,7 +114,7 @@
                                 <label for="privacy_agree">개인정보취급방침</label>
                                 <input type="radio" id="privacy_agree" name="privacy" checked><label for="privacy_agree">동의</label>
                                 <input type="radio" id="privacy_not" name="privacy"><label for="privacy_not">비동의</label>
-                                <a href="javascript:void(0)">개인정보취급방침 보기</a>
+                                <a href="javascript:void(0)" class="view-policy">개인정보취급방침 보기</a>
                             </td>
                         </tr>
                         <tr>
@@ -449,8 +449,7 @@
             <p class="copylight">COPYRIGHT © SINCE 2013 AUTODIRECTCAR Co.,Ltd. ALL RIGHTS RESERVED.</p>
         </div>
         <div class="footer-banner">
-            <img src="resources/img/footer_banner_1.png">
-            <img src="resources/img/footer_banner_2.png">
+            <img src="resources/img/footer_banner.png">
         </div>
     </div>
 </div>
@@ -458,7 +457,7 @@
 <!-- Aside Banner -->
 <div class="aside-banner">
     <div class="aside-info">
-        <div class="tel-info"><span>대표번호</span><strong>1644<br>2858</strong></div>
+        <div class="tel-info"><span>대표번호</span><strong>1644<br>5752</strong></div>
         <div class="time-info"><span>평일</span><strong>10:00 ~ 18:30</strong><span>주말</span><strong>13:00 ~ 17:00</strong></div>
     </div>
     <div class="aside-links">
@@ -534,7 +533,7 @@
                         <input type="checkbox" class="quick-form-checkbox" id="quick_quo_policy"><label for="quick_quo_policy">개인정보취급방침 동의</label>
                     </div>
                     <div class="form-item w50 tr">
-                        <a href="javascript:void(0);" class="form-btn-policy">개인정보취급방침보기</a>
+                        <a href="javascript:void(0);" class="form-btn-policy view-policy">개인정보취급방침보기</a>
                     </div>
                     <div class="form-item">
                         <a href="javascript:void(0);" class="form-btn-quotation">견적문의하기</a>
@@ -948,11 +947,16 @@ $(document).ready(function(){
     $('.popup-quotation .popup-close').click(function() {
         $('.popup-quotation').removeClass('on');
     });
-    
+
     $('.quotation-submit').click(function() {
         $('.popup-policy').addClass('on');
     });
 
+
+    $('.view-policy').click(function() {
+        $('.popup-policy').addClass('on');
+    });
+    
     $('.popup-policy .popup-close').click(function() {
         $('.popup-policy').removeClass('on');
     });

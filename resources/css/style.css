@@ -119,6 +119,7 @@ input,button,select,textarea {outline:none;font-family:'Noto Sans KR', sans-seri
 .header .nav > ul > li {float:left;padding:0 25px;}
 .header .nav > ul > li > a {position:relative;color:#000;display:block;font-size:18px;font-weight:400;height:90px;line-height:88px;padding:0;box-sizing:border-box;}
 .header .nav > ul > li > a.active {color:#d70000;font-weight:600;}
+.header .nav > ul > li.eco > a {color:#008954;}
 .header .nav > ul > li.eco > a.active {color:#008954;font-weight:600;}
 .header .nav > ul > li > a img {vertical-align:middle;margin-right:5px;}
 .header .nav > ul > li > a span {display:inline-block;vertical-align:middle;}
@@ -191,6 +192,14 @@ input,button,select,textarea {outline:none;font-family:'Noto Sans KR', sans-seri
 .timeattack-wrap {position:relative;width:1260px;margin:0 auto;padding:65px 0 70px 0;}
 .timeattack-list {display:flex;}
 .timeattack-item {flex:1;background-color:#fff;margin-left:20px;width:285px;box-sizing:border-box;}
+.timeattack-type {padding:7px 9px 5px 9px;} 
+.timeattack-type span {display:inline-block;width:60px;text-align:center;height:20px;line-height:20px;color:#FFF;background-color:#232323;font-size:11px;}
+.timeattack-type span.type1 {background-color:#d70000;}
+.timeattack-type span.type2 {background-color:#0020ab;}
+.timeattack-type span.type3 {background-color:#00aa8c;}
+.timeattack-type span.type4 {background-color:#cd027e;}
+.timeattack-type span.type5 {background-color:#f37800;}
+
 .timeattack-item:first-child {margin-left:0;}
 .timeattack-item .car-info {padding:0 0 15px 0;}
 .timeattack-item .car-info .car-image {text-align:center;height:170px;line-height:170px;}
@@ -348,7 +357,7 @@ input,button,select,textarea {outline:none;font-family:'Noto Sans KR', sans-seri
 .ecocar-list ul:after {content:"";display:block;clear:both;}
 .ecocar-list li {float:left;width:50%;padding-right:10px;box-sizing:border-box;padding-bottom:30px;}
 .ecocar-list li:nth-child(even) {padding-left:10px;padding-right:0;}
-.ecocar-list .car-box {position:relative;border:1px solid #ccc;height:247px;}
+.ecocar-list .car-box {position:relative;border:1px solid #ccc;height:270px;}
 .ecocar-list .car-box .car-img {position:absolute;top:0;left:0;width:50%;height:245px;line-height:245px;text-align:center;}
 .ecocar-list .car-box .car-img img {vertical-align:middle;}
 .ecocar-list .car-box .car-info {padding-left:calc(50% + 15px);padding-top:30px;margin-right:30px;}
@@ -361,7 +370,8 @@ input,button,select,textarea {outline:none;font-family:'Noto Sans KR', sans-seri
 .ecocar-list .car-box .car-info .car-detail:after {content:"";display:block;clear:both;}
 .ecocar-list .car-box .car-info .car-detail > div {float:left;width:50%;color:#222;font-weight:300;}
 .ecocar-list .car-box .car-info .car-price {position:relative;border-top:1px solid #ccc;padding-top:5px;text-align:right;}
-.ecocar-list .car-box .car-info .car-price span {position:absolute;top:13px;left:0;font-size:18px;font-weight:600;}
+.ecocar-list .car-box .car-info .car-price .car-cost {text-align:right;font-size:20px;color:#676767;letter-spacing:0;text-decoration:line-through;}
+.ecocar-list .car-box .car-info .car-price span {position:absolute;top:41px;left:0;font-size:18px;font-weight:600;}
 .ecocar-list .car-box .car-info .car-price strong {display:inline-block;font-size:26px;font-weight:800;vertical-align:middle;color:#0054cb;}
 .ecocar-list .car-box .car-info .car-price em {display:inline-block;font-size:18px;font-style:normal;vertical-align:middle;color:#0054cb;}
 .ecocar-list .car-box .car-over {opacity:0;position:absolute;top:0;left:0;right:0;bottom:0;background-color:rgba(0,84,203,0.8);z-index:2;text-align:center;line-height:247px;transition:all 0.3s;}
@@ -390,17 +400,19 @@ input,button,select,textarea {outline:none;font-family:'Noto Sans KR', sans-seri
 .hotdeal-list li {float:left;width:50%;padding-right:10px;box-sizing:border-box;padding-bottom:30px;}
 .hotdeal-list li:nth-child(even) {padding-left:10px;padding-right:0;}
 .hotdeal-list .deal-box {position:relative;cursor:pointer;}
-.hotdeal-list .deal-box.off:after {content:"";display:block;position:absolute;top:0;left:0;width:100%;height:300px;line-height:300px;background:url(../img/hotdeal_off.png) 50% 50% no-repeat;}
 .hotdeal-list .deal-box .d-day {position:absolute;top:-10px;right:30px;width:80px;height:80px;text-align:center;color:#fff;background-color:#fa3543;z-index:2;}
 .hotdeal-list .deal-box .d-day span {display:block;line-height:25px;padding-top:5px;font-size:13px;letter-spacing:0;font-weight:500;}
 .hotdeal-list .deal-box .d-day strong {font-size:34px;line-height:35px;font-weight:800;letter-spacing:0;}
 .hotdeal-list .deal-box .deal-info {position:relative;padding:35px 20px 25px 20px;}
 .hotdeal-list .deal-box .deal-type {position:absolute;top:-15px;left:15px;}
-.hotdeal-list .deal-box .deal-img {width:620px;height:300px;font-size:0;overflow:hidden;}
+.hotdeal-list .deal-box .deal-img {position:relative;width:620px;height:300px;font-size:0;overflow:hidden;}
 .hotdeal-list .deal-box .deal-img img {transform:scale(1);transition:all 0.5s;}
 .hotdeal-list .deal-box:hover .deal-img img {transform:scale(1.05);}
 .hotdeal-list .deal-box .deal-info h2 {font-size:22px;font-weight:600;line-height:35px;color:#222;}
 .hotdeal-list .deal-box .deal-info .deal-date {font-size:15px;font-weight:300;letter-spacing:0;}
+.hotdeal-list .deal-box.off:after {content:"";display:block;position:absolute;top:0;left:0;width:100%;height:300px;line-height:300px;background:url(../img/hotdeal_off.png) 50% 50% no-repeat;}
+.hotdeal-list .deal-box.off .deal-img:after {content:"";display:block;position:absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;background-color:rgba(0,0,0,0.5)}
+.hotdeal-list .deal-box.off:hover .deal-img img {transform:scale(1);}
 
 .hotdeal-detail {width:1260px;margin:0 auto;padding:50px 0;}
 .hotdeal-detail-top {position:relative;}
@@ -663,9 +675,9 @@ input,button,select,textarea {outline:none;font-family:'Noto Sans KR', sans-seri
 .sub-ctn.board .board-ctn .board-btn-area a {display:inline-block;text-align:center;width:150px;height:50px;line-height:48px;border:1px solid #ccc;font-size:16px;font-weight:500;color:#222;}
 .sub-ctn.board .board-ctn .board-btn-area a:hover {border-color:#d70000;color:#d70000;}
 
-.app-intro-top {height:620px;background:url(../img/bg_app_intro.png) 0 0 repeat-x;}
-.app-intro-top .app-intro-img {width:1260px;height:620px;margin:0 auto;padding-top:375px;background:url(../img/bg_app_intro_img.png) 0 0 no-repeat;text-align:left;box-sizing:border-box;}
-.app-intro-top .app-intro-img .app-intro-btn {margin-top:20px;font-size:0;}
+.app-intro-top {height:561px;background:url(../img/bg_app_intro.png) 0 0 repeat-x;}
+.app-intro-top .app-intro-img {width:1260px;height:561px;margin:0 auto;padding-top:375px;background:url(../img/bg_app_intro_img.png) 0 0 no-repeat;text-align:left;box-sizing:border-box;}
+.app-intro-top .app-intro-img .app-intro-btn {margin-top:20px;font-size:0;display:none;}
 .app-intro-top .app-intro-img .app-intro-btn a {display:inline-block;}
 
 .app-intro-bottom {height:547px;background:url(../img/bg_app_intro_bottom.png) 50% 0 no-repeat;background-size:cover;text-align:center;box-sizing:border-box;padding-top:85px;}
@@ -711,7 +723,8 @@ input,button,select,textarea {outline:none;font-family:'Noto Sans KR', sans-seri
 .footer-quick .quick-menus .quick-btn.kakao.on {background:url(../img/btn_quick_kakao.png) 0 0 no-repeat;}
 .footer-quick .quick-menus .quick-btn.quotation:hover,
 .footer-quick .quick-menus .quick-btn.quotation.on {background:url(../img/btn_quick_quotation.png) 0 0 no-repeat;}
-.footer-quick .quick-menus .quick-btn.quotation:before {content:"";position:absolute;top:-50px;left:-28px;display:block;width:156px;height:40px;background:url(../img/bubble_quick_quotation.png) 0 0 no-repeat;}
+.footer-quick .quick-menus .quick-btn.quotation:before {content:"";animation-name:quo_ani;animation-duration:3s;animation-iteration-count:infinite;position:absolute;top:-50px;left:-28px;display:block;width:156px;height:40px;background:url(../img/bubble_quick_quotation.png) 0 0 no-repeat;}
+@keyframes quo_ani { 0%{opacity:0;} 20%{opacity:1;} 80% {opacity:1;} 100% {opacity:0}}
 .footer-quick .quick-menus .quick-btn.location:hover,
 .footer-quick .quick-menus .quick-btn.location.on {background:url(../img/btn_quick_location.png) 0 0 no-repeat;}
 .footer-quick .quick-ctn {position:relative;border-top:4px solid #ccc;padding:40px 0;background-color:#fff;z-index:1;display:none;}
