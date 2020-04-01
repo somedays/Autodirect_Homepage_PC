@@ -15,6 +15,7 @@
 <link rel="stylesheet" type="text/css" href="resources/css/owl.carousel.min.css">
 <link rel="stylesheet" type="text/css" href="resources/css/owl.theme.default.min.css">
 <link rel="stylesheet" type="text/css" href="resources/css/jquery.mCustomScrollbar.css">
+<link rel="stylesheet" type="text/css" href="resources/css/animate.css">
 </head>
 <body>
 <div class="header">
@@ -30,7 +31,7 @@
                         <li><a href="app_intro.html">공식어플</a></li>
                     </ul>
                 </li>
-                <li><a href="#">장기렌트</a></li>
+                <li><a href="rentcar.html">장기렌트</a></li>
                 <li><a href="#">견적문의</a></li>
             </ul>
         </div>
@@ -46,8 +47,10 @@
                 <li><a href="review.html"><span>생생 리얼후기</span></a></li>
             </ul>
         </div>
-        <div class="header-banner">
-            <div class="header-banner-item"><img src="resources/img/header_banner_1.png"></div>
+        <div class="header-banner owl-carousel">
+            <div class="header-banner-item"><img src="resources/img/top_banner_1.png"></div>
+            <div class="header-banner-item"><img src="resources/img/top_banner_2.png"></div>
+            <div class="header-banner-item"><img src="resources/img/top_banner_3.png"></div>
         </div>
     </div>
 </div>
@@ -401,14 +404,33 @@
             <h2>제휴 파트너사</h2>
             <p>오토다이렉트카와 제휴를 맺은 22개 렌터카 브랜드에서 가격비교를 진행해 고객님이 원하는 차량을 가장 저렴하고 합리적인 가격으로 알아볼 수 있습니다</p>
             <div class="partner-list owl-carousel">
-                <div><img src="resources/img/partners/partner_1.png"></div>
-                <div><img src="resources/img/partners/partner_2.png"></div>
-                <div><img src="resources/img/partners/partner_3.png"></div>
-                <div><img src="resources/img/partners/partner_4.png"></div>
-                <div><img src="resources/img/partners/partner_1.png"></div>
-                <div><img src="resources/img/partners/partner_2.png"></div>
-                <div><img src="resources/img/partners/partner_3.png"></div>
-                <div><img src="resources/img/partners/partner_4.png"></div>
+                <div><img src="resources/img/partners/partner_01.png"></div>
+                <div><img src="resources/img/partners/partner_02.png"></div>
+                <div><img src="resources/img/partners/partner_03.png"></div>
+                <div><img src="resources/img/partners/partner_04.png"></div>
+                <div><img src="resources/img/partners/partner_05.png"></div>
+                <div><img src="resources/img/partners/partner_06.png"></div>
+                <div><img src="resources/img/partners/partner_07.png"></div>
+                <div><img src="resources/img/partners/partner_09.png"></div>
+                <div><img src="resources/img/partners/partner_10.png"></div>
+                <div><img src="resources/img/partners/partner_11.png"></div>
+                <div><img src="resources/img/partners/partner_12.png"></div>
+                <div><img src="resources/img/partners/partner_13.png"></div>
+                <div><img src="resources/img/partners/partner_14.png"></div>
+                <div><img src="resources/img/partners/partner_15.png"></div>
+                <div><img src="resources/img/partners/partner_16.png"></div>
+                <div><img src="resources/img/partners/partner_17.png"></div>
+                <div><img src="resources/img/partners/partner_18.png"></div>
+                <div><img src="resources/img/partners/partner_19.png"></div>
+                <div><img src="resources/img/partners/partner_20.png"></div>
+                <div><img src="resources/img/partners/partner_21.png"></div>
+                <div><img src="resources/img/partners/partner_22.png"></div>
+                <div><img src="resources/img/partners/partner_23.png"></div>
+                <div><img src="resources/img/partners/partner_24.png"></div>
+                <div><img src="resources/img/partners/partner_25.png"></div>
+                <div><img src="resources/img/partners/partner_26.png"></div>
+                <div><img src="resources/img/partners/partner_27.png"></div>
+                <div><img src="resources/img/partners/partner_28.png"></div>
             </div>
         </div>
     </div>
@@ -830,6 +852,25 @@ $(document).ready(function(){
   $('.count-num').counterUp({
         delay: 10,
         time: 1000
+    });
+
+    
+  var owl = $('.owl-carousel.header-banner');
+        owl.owlCarousel({
+        margin: 0,
+        loop: true,
+        nav: true,
+        dots:false,
+        autoplay:true,
+        autoplayTimeout:3000,
+        autoplayHoverPause:true,
+        animateIn: 'fadeInUp',
+        animateOut: 'fadeOutUp',
+        responsive:{
+            1260:{
+                items:1
+            }
+        }
     });
 
   var owl = $('.owl-carousel.main-image');
