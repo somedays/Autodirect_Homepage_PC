@@ -52,7 +52,7 @@
     </div>
 </div>
 <div class="content">
-    <div class="sub-nav">
+    <div class="sub-nav" id="subNav">
         <ul>
             <li><a href="company.html">회사소개</a></li>
             <li><a href="awards.html">수상내역</a></li>
@@ -173,8 +173,10 @@ $(window).scroll(function(){
   var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("headerArea").style.top = "0";
+    document.getElementById("subNav").style.top = "132px";
   } else {
     document.getElementById("headerArea").style.top = "-132px";
+    document.getElementById("subNav").style.top = "-132px";
   }
   prevScrollpos = currentScrollPos;
 });
