@@ -198,7 +198,7 @@ input,button,select,textarea {outline:none;font-family:'Noto Sans KR', sans-seri
 .timeattack-wrap {position:relative;width:1260px;margin:0 auto;padding:65px 0 70px 0;}
 .timeattack-list {display:flex;}
 .timeattack-item {flex:1;background-color:#fff;margin-left:20px;width:285px;box-sizing:border-box;}
-.timeattack-type {padding:7px 9px 5px 9px;} 
+.timeattack-type {padding:7px 9px 5px 9px;height:35px;box-sizing:border-box;}
 .timeattack-type span {display:inline-block;width:60px;text-align:center;height:20px;line-height:20px;color:#FFF;background-color:#232323;font-size:11px;}
 .timeattack-type span.type1 {background-color:#d70000;}
 .timeattack-type span.type2 {background-color:#0020ab;}
