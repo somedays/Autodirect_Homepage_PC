@@ -32,7 +32,7 @@
                     </ul>
                 </li>
                 <li><a href="rentcar.html">장기렌트</a></li>
-                <li><a href="#">견적문의</a></li>
+                <li><a href="#" class="header-quotation-open">견적문의</a></li>
             </ul>
         </div>
     </div>
@@ -824,6 +824,108 @@
         </div>
     </div>
 </div>
+<div class="header-quotation">
+    <div class="popup-box">
+        <div class="popup-tt">
+            <button type="button" class="popup-close"><img src="resources/img/header-quo-close.png"></button>
+        </div>
+        <div class="popup-ctn">
+            <div class="select-item">
+                <h3>제조사 선택</h3>
+                <ul>
+                    <li><input type="radio" id="check_brand01" name="check_brand" /><label for="check_brand01"><span>현대</span></label></li>
+                    <li><input type="radio" id="check_brand02" name="check_brand" /><label for="check_brand02"><span>기아</span></label></li>
+                    <li><input type="radio" id="check_brand03" name="check_brand" /><label for="check_brand03"><span>르노삼성</span></label></li>
+                    <li><input type="radio" id="check_brand04" name="check_brand" /><label for="check_brand04"><span>쉐보레</span></label></li>
+                    <li><input type="radio" id="check_brand05" name="check_brand" /><label for="check_brand05"><span>BMW</span></label></li>
+                    <li><input type="radio" id="check_brand06" name="check_brand" /><label for="check_brand06"><span>벤츠</span></label></li>
+                    <li><input type="radio" id="check_brand07" name="check_brand" /><label for="check_brand07"><span>쉐보레</span></label></li>
+                    <li><input type="radio" id="check_brand08" name="check_brand" /><label for="check_brand08"><span>BMW</span></label></li>
+                    <li><input type="radio" id="check_brand09" name="check_brand" /><label for="check_brand09"><span>벤츠</span></label></li>
+                </ul>
+            </div>
+            <div class="select-item">
+                <h3>차량 선택</h3>
+                <ul>
+                    <li><input type="radio" id="check_car01" name="check_car" /><label for="check_car01"><span>더 뉴 그랜저 hybrid</span></label></li>
+                    <li><input type="radio" id="check_car02" name="check_car" /><label for="check_car02"><span>더 뉴 그랜저 hybrid</span></label></li>
+                    <li><input type="radio" id="check_car03" name="check_car" /><label for="check_car03"><span>더 뉴 그랜저 hybrid</span></label></li>
+                    <li><input type="radio" id="check_car04" name="check_car" /><label for="check_car04"><span>더 뉴 그랜저 hybrid</span></label></li>
+                    <li><input type="radio" id="check_car05" name="check_car" /><label for="check_car05"><span>더 뉴 그랜저 hybrid</span></label></li>
+                    <li><input type="radio" id="check_car06" name="check_car" /><label for="check_car06"><span>더 뉴 그랜저 hybrid</span></label></li>
+                </ul>
+            </div>
+            <div class="select-item">
+                <h3>등급 선택</h3>
+                <ul>
+                    <li><input type="radio" id="check_grade01" name="check_grade" /><label for="check_grade01"><span>2020년형 가솔린 2.5 프리미엄</span><strong>345,000,000원</strong></label></li>
+                    <li><input type="radio" id="check_grade02" name="check_grade" /><label for="check_grade02"><span>2020년형 가솔린 2.5 프리미엄</span><strong>345,000,000원</strong></label></li>
+                    <li><input type="radio" id="check_grade03" name="check_grade" /><label for="check_grade03"><span>2020년형 가솔린 2.5 프리미엄</span><strong>345,000,000원</strong></label></li>
+                    <li><input type="radio" id="check_grade04" name="check_grade" /><label for="check_grade04"><span>2020년형 가솔린 2.5 프리미엄</span><strong>345,000,000원</strong></label></li>
+                    <li><input type="radio" id="check_grade05" name="check_grade" /><label for="check_grade05"><span>2020년형 가솔린 2.5 프리미엄</span><strong>345,000,000원</strong></label></li>
+                    <li><input type="radio" id="check_grade06" name="check_grade" /><label for="check_grade06"><span>2020년형 가솔린 2.5 프리미엄</span><strong>345,000,000원</strong></label></li>
+                    <li><input type="radio" id="check_grade07" name="check_grade" /><label for="check_grade07"><span>2020년형 가솔린 2.5 프리미엄</span><strong>345,000,000원</strong></label></li>
+                    <li><input type="radio" id="check_grade08" name="check_grade" /><label for="check_grade08"><span>2020년형 가솔린 2.5 프리미엄</span><strong>345,000,000원</strong></label></li>
+                    <li><input type="radio" id="check_grade09" name="check_grade" /><label for="check_grade09"><span>2020년형 가솔린 2.5 프리미엄</span><strong>345,000,000원</strong></label></li>
+                </ul>
+            </div>
+            <div class="select-item car-option">
+                <h3>옵션 선택</h3>
+                <ul>
+                    <li><input type="checkbox" id="check_grade001" name="check_grade" /><label for="check_grade001"><span>현대</span><strong>5,000,000원</strong></label></li>
+                    <li><input type="checkbox" id="check_grade002" name="check_grade" /><label for="check_grade002"><span>기아</span><strong>5,000,000원</strong></label></li>
+                    <li><input type="checkbox" id="check_grade003" name="check_grade" /><label for="check_grade003"><span>르노삼성</span><strong>5,000,000원</strong></label></li>
+                    <li><input type="checkbox" id="check_grade004" name="check_grade" /><label for="check_grade004"><span>쉐보레</span><strong>5,000,000원</strong></label></li>
+                    <li><input type="checkbox" id="check_grade005" name="check_grade" /><label for="check_grade005"><span>BMW</span><strong>5,000,000원</strong></label></li>
+                    <li><input type="checkbox" id="check_grade004" name="check_grade" /><label for="check_grade004"><span>쉐보레</span><strong>5,000,000원</strong></label></li>
+                    <li><input type="checkbox" id="check_grade005" name="check_grade" /><label for="check_grade005"><span>BMW</span><strong>5,000,000원</strong></label></li>
+                    <li><input type="checkbox" id="check_grade006" name="check_grade" /><label for="check_grade006"><span>벤츠</span><strong>5,000,000원</strong></label></li>
+                    <li><input type="checkbox" id="check_grade007" name="check_grade" /><label for="check_grade007"><span>쉐보레</span><strong>5,000,000원</strong></label></li>
+                    <li><input type="checkbox" id="check_grade008" name="check_grade" /><label for="check_grade008"><span>BMW</span><strong>5,000,000원</strong></label></li>
+                    <li><input type="checkbox" id="check_grade009" name="check_grade" /><label for="check_grade009"><span>벤츠</span><strong>5,000,000원</strong></label></li>
+                </ul>
+            </div>
+            <div class="select-item car-color">
+                <h3>색상 선택</h3>
+                <div class="quo-color-list owl-carousel">
+                    <div class="color-item"><input type="radio" id="color_gp01" name="color_name"><label for="color_gp01"><div class="color-box" style="background-color:#ffffff"></div><span>화이트 크림 (WC9)</span></label></div>
+                    <div class="color-item"><input type="radio" id="color_gp02" name="color_name"><label for="color_gp02"><div class="color-box" style="background-color:#323232"></div><span>Color Name</span></label></div>
+                    <div class="color-item"><input type="radio" id="color_gp03" name="color_name"><label for="color_gp03"><div class="color-box" style="background-color:#323232"></div><span>Color Name</span></label></div>
+                    <div class="color-item"><input type="radio" id="color_gp04" name="color_name"><label for="color_gp04"><div class="color-box" style="background-color:#323232"></div><span>Color Name</span></label></div>
+                    <div class="color-item"><input type="radio" id="color_gp05" name="color_name"><label for="color_gp05"><div class="color-box" style="background-color:#323232"></div><span>Color Name</span></label></div>
+                    <div class="color-item"><input type="radio" id="color_gp06" name="color_name"><label for="color_gp06"><div class="color-box" style="background-color:#323232"></div><span>Color Name</span></label></div>
+                </div>
+            </div>
+            <div class="select-item form-area">
+                <h3>대여 조건 선택</h3>
+                <div class="car-form select-list">
+                    <div class="form-item w50"><select><option>이용방법 선택</option></select></div>
+                    <div class="form-item w50"><select><option>이용기간 선택</option></select></div>
+                    <div class="form-item w50">
+                        <input type="radio" id="buy_type1" name="buy_type"><label for="buy_type1">보증금</label>
+                        <input type="radio" id="buy_type2" name="buy_type"><label for="buy_type2">선수금</label>
+                    </div>
+                    <div class="form-item w50"><select><option>보증금 선택</option></select></div>
+                    <div class="form-item w50"><select><option>연간 주행거리 선택</option></select></div>
+                    <div class="form-item w50"><select><option>상담 가능시간 선택</option></select></div>
+                </div>
+                <div class="user-agree">
+                    <input type="checkbox" id="user_agree" checked><label for="user_agree">개인정보 수집 이용등에 대한 동의</label>
+                    <a href="#">전문보기</a>
+                </div>
+            </div>
+            <div class="select-item form-area">
+                <h3>고객 정보 입력 ( * 필수 )</h3>
+                <div class="car-form input-list">
+                    <div class="form-item req"><label for="user_name">이름(회사명)</label><input type="text" id="user_name"></div>
+                    <div class="form-item req"><label for="user_tel">전화번호('-'제외)</label><input type="text" id="user_tel"></div>
+                    <div class="form-item"><label for="user_memo">상담메모</label><input type="text" id="user_memo"></div>
+                    <div class="footer-btnarea"><button type="button" class="quotation-submit">견적문의</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="popup-policy">
     <div class="popup-box">
         <div class="popup-tt">
@@ -1080,12 +1182,24 @@ $(document).ready(function(){
         $('.popup-quotation').addClass('on');
     });
 
+    $('.header-quotation-open').click(function() {
+        $('.header-quotation').addClass('on');
+    });
+
+    $('.header-quotation .popup-close').click(function() {
+        $('.header-quotation').removeClass('on');
+    });
+
     $('.quick-quo-close').click(function() {
         $('.quick-quotation').addClass('off');
     });
 
     $('.popup-quotation .popup-close').click(function() {
         $('.popup-quotation').removeClass('on');
+    });
+
+    $('.user-agree a').click(function() {
+        $('.popup-policy').addClass('on');
     });
 
     $('.quotation-submit').click(function() {
