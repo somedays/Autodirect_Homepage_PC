@@ -410,7 +410,9 @@ input,button,select,textarea {outline:none;font-family:'Noto Sans KR', sans-seri
 .hotdeal-list .deal-box .d-day span {display:block;line-height:25px;padding-top:5px;font-size:13px;letter-spacing:0;font-weight:500;}
 .hotdeal-list .deal-box .d-day strong {font-size:34px;line-height:35px;font-weight:800;letter-spacing:0;}
 .hotdeal-list .deal-box .deal-info {position:relative;padding:35px 20px 25px 20px;}
-.hotdeal-list .deal-box .deal-type {position:absolute;top:-15px;left:15px;}
+.hotdeal-list .deal-box .deal-types {position:absolute;top:-15px;left:10px;}
+.hotdeal-list .deal-box .deal-type {display:inline-block;margin-left:5px;}
+
 .hotdeal-list .deal-box .deal-img {position:relative;width:620px;height:300px;font-size:0;overflow:hidden;}
 .hotdeal-list .deal-box .deal-img img {transform:scale(1);transition:all 0.5s;}
 .hotdeal-list .deal-box:hover .deal-img img {transform:scale(1.05);}
