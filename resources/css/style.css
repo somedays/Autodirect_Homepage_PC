@@ -92,7 +92,8 @@ button:focus{outline:none;}
 input,button,select,textarea {outline:none;font-family:'Noto Sans KR', sans-serif;font-weight:400;}
 
 /* Header Area */
-.header {position:fixed;top:0;left:0;right:0;bottom:0;height:132px;background-color:#FFF;z-index:15;min-width:1260px;overflow:auto;box-shadow:inset 0 -1px 0 0 #e6e6e6;transition:all 0.5s;}
+.header {position:fixed;top:0;width:100%;height:132px;background-color:#FFF;z-index:15;min-width:1260px;overflow:auto;box-shadow:inset 0 -1px 0 0 #e6e6e6;transition: top 0.5s ease-in-out;}
+.nav-up {top: -132px;}
 .header-wrap {position:relative;width:1260px;margin:0 auto;}
 
 .header-top {height:41px;border-bottom:1px solid #e6e6e6;box-sizing:border-box;}

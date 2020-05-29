@@ -108,6 +108,7 @@
                                 <input type="text" placeholder="성함 및 회사명">
                             </td>
                         </tr>
+                        <tr>
                             <td colspan="2">
                                 <input type="text" placeholder="연락처(-제외)">
                             </td>
@@ -998,7 +999,7 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>레드캡, 농협캐피탈(렌트), 농협캐피탈(리스), 나우카, 지모터스, 롯데렌터카, 롯데캐피탈,롯데오토리스, 메리츠캐피탈, 미래에셋캐피탈, 삼성카드, 신한카드, 아마존카, 아주캐피탈, 알페라, 오릭스, 우리카드, 조이렌트카, 하나캐피탈, 하모니렌트카, 한진렌터카, 현대캐피탈, 효성캐피탈, AJ렌터카, BNK캐피탈, CNH프리미어렌탈, DGB캐피탈, JB우리캐피탈, KB캐피탈(인천지점), KB캐피탈(수원지점), "KDB캐피탈, (산은캐피탈)", SK렌터카</td>
+                                <td>레드캡, 농협캐피탈(렌트), 농협캐피탈(리스), 나우카, 지모터스, 롯데렌터카, 롯데캐피탈, 롯데오토리스, 메리츠캐피탈, 미래에셋캐피탈, 삼성카드, 신한카드, 아마존카, 아주캐피탈, 알페라, 오릭스, 우리카드, 조이렌트카, 하나캐피탈, 하모니렌트카, 한진렌터카, 현대캐피탈, 효성캐피탈, AJ렌터카, BNK캐피탈, CNH프리미어렌탈, DGB캐피탈, JB우리캐피탈, KB캐피탈(인천지점), KB캐피탈(수원지점), "KDB캐피탈, (산은캐피탈)", SK렌터카</td>
                                 <td>렌터카 중개 및 알선<br>(장기 렌터카/리스 서비스 제공)</td>
                             </tr>
                         </tbody>
@@ -1021,24 +1022,55 @@
 <script src="resources/js/jquery.pagenav.js"></script>
 <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=83bfuniegk&amp;submodules=panorama,geocoder,drawing,visualization"></script>
 <script>
-var prevScrollpos = window.pageYOffset;
+
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('.header').outerHeight();
+
 $(window).scroll(function(){
-      banner = $('.aside-banner'),
-      scroll = $(window).scrollTop();
+    banner = $('.aside-banner')
+    scroll = $(window).scrollTop();
   if (scroll >= 150) { 
     banner.addClass('fixed');
   }
   else {
     banner.removeClass('fixed');
   }
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("headerArea").style.top = "0";
-  } else {
-    document.getElementById("headerArea").style.top = "-132px";
-  }
-  prevScrollpos = currentScrollPos;
 });
+
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+    var st = $(this).scrollTop();
+    
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+    
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('.header').removeClass('nav-down').addClass('nav-up');
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('.header').removeClass('nav-up').addClass('nav-down');
+        }
+    }
+    
+    lastScrollTop = st;
+}
 
 $(document).ready(function(){
 
