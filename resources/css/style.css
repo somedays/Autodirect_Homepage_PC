@@ -120,8 +120,8 @@ input,button,select,textarea {outline:none;font-family:'Noto Sans KR', sans-seri
 .header .nav > ul > li {float:left;padding:0 25px;}
 .header .nav > ul > li > a {position:relative;color:#000;display:block;font-size:18px;font-weight:400;height:90px;line-height:88px;padding:0;box-sizing:border-box;}
 .header .nav > ul > li > a.active {color:#d70000;font-weight:600;}
-.header .nav > ul > li.eco > a {color:#008954;}
-.header .nav > ul > li.eco > a.active {color:#008954;font-weight:600;}
+.header .nav > ul > li.eco > a {color:#003482;}
+.header .nav > ul > li.eco > a.active {color:#003482;font-weight:600;}
 .header .nav > ul > li > a img {vertical-align:middle;margin-right:5px;}
 .header .nav > ul > li > a span {display:inline-block;vertical-align:middle;}
 .header .nav > ul > li.new > a span:after {content:"";position:absolute;top:30px;right:-7px;display:block;width:8px;height:8px;border-radius:5px;background-color:#d70000;}
@@ -359,8 +359,8 @@ input,button,select,textarea {outline:none;font-family:'Noto Sans KR', sans-seri
 
 
 /* ECO Car */
-.ecocar-image {background:url(../img/bg_ecocar.png) 0 0 repeat-x;height:867px;text-align:center;min-width:1260px;}
-.ecocar-list ul {max-width:1260px;margin:0 auto;padding:40px 0;}
+.ecocar-image {background:#defffc url(../img/bg_ecocar.png) 50% 0 repeat-x;text-align:center;min-width:1260px;padding-bottom:80px;}
+.ecocar-list ul {max-width:1260px;margin:0 auto;padding:80px 0 40px 0;}
 .ecocar-list ul:after {content:"";display:block;clear:both;}
 .ecocar-list li {float:left;width:50%;padding-right:10px;box-sizing:border-box;padding-bottom:30px;}
 .ecocar-list li:nth-child(even) {padding-left:10px;padding-right:0;}
